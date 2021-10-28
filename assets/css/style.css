@@ -1,3 +1,115 @@
-            /* MEDIA QUERY - SCREEN UP TO 1200PX (DESKTOP)*/
-            
-            @media screen and (min-width: 1200px) {}
+/* MEDIA QUERY - SCREEN FROM 1200PX AND ABOVE (DESKTOP) */
+
+@media screen and (min-width: 1200px) {
+  /* BODY */
+  body {
+    width: auto;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+  }
+
+  /* HEADER FLEX CONTAINER */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* HEADER UL LIST MENU - FLEX CONTAINER */
+  header ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /* HEADER LI ELEMENTS MENU */
+  header li {
+    margin-right: 50px;
+  }
+
+  /* HEADER LINKS */
+  header a {
+    text-decoration: none;
+  }
+
+  /* MAIN SECTION */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* ID #SEARCH SECTION */
+  #search {
+    width: 100%;
+  }
+
+  /* ID #FILTERS SECTION */
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* UL IN FILTERS SECTION */
+  #filters ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  /*PARAGRAPHS IN FILTERS SECTION */
+  #filters p {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  /* UL IN ACCOMODATION SECTION */
+  #accomodation ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /* ARTICLE IN ACCOMODATION SECTION */
+  #accomodation article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* H2 TITLE IN ACCOMODATION SECTION */
+  #accomodation h2 {
+  }
+
+  /* LINKS IN ACCOMODATION SECTION */
+  #accomodation a {
+    width: 100%;
+  }
+
+  /* UL IN ASIDE SECTION */
+  aside ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /* POPULAR SECTION */
+  #popular {
+  }
+
+  /* ACTIVITY SECTION */
+  #activity {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* H2 TITLE IN ACTIVITY SECTION */
+  #activity h2 {
+    flex-basis: 100%;
+  }
+
+  /* FIRST CONTAINER IN FOOTER SECTION */
+  #footer_container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
