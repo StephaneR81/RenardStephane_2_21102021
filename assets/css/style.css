@@ -146,17 +146,17 @@
 }
 
 /* CREATE CSS INFERIOR TO 1200px */
-@media handheld and (max-width: 1199px) {
+@media all and (max-width: 1199px) {
 }
 
 /* CREATE CSS INFERIOR TO 992px */
-@media handheld and (max-width: 991px) {
+@media all and (max-width: 991px) {
 }
 
 /* CREATE CSS INFERIOR TO 768px */
-@media handheld and (max-width: 767px) {
+@media all and (max-width: 767px) {
 }
 
 /* CREATE CSS INFERIOR TO 576px */
-@media handheld and (max-width: 575px) {
+@media all and (max-width: 575px) {
 }
