@@ -1,21 +1,22 @@
-/* MEDIA QUERY - SCREEN FROM 1200PX AND ABOVE (DESKTOP) */
+/* MEDIA QUERY - SCREEN FROM 1200px AND ABOVE (DESKTOP) */
 
 @media screen and (min-width: 1200px) {
   /* BODY */
   body {
-    width: auto;
+    margin: 1em;
     font-family: Raleway, Arial, Helvetica, sans-serif;
   }
 
-  /* HEADER FLEX CONTAINER */
-  header {
-    display: flex;
-    justify-content: space-between;
+  /* WHOLE PAGE LINKS */
+  a {
+    text-decoration: none;
   }
 
-  /* HEADER UL LIST MENU - FLEX CONTAINER */
+  /* HEADER FLEX CONTAINER */
+  header,
   header ul {
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
     padding-left: 0;
   }
@@ -25,9 +26,16 @@
     margin-right: 50px;
   }
 
-  /* HEADER LINKS */
-  header a {
-    text-decoration: none;
+  /* LINKS IN NAV SECTION */
+  nav a {
+    padding-top: 30px;
+    color: darkgray;
+  }
+
+  /* HOVER EVENT ON LINKS IN NAV SECTION */
+  nav a:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
   }
 
   /* MAIN SECTION */
@@ -63,6 +71,21 @@
     width: 50%;
   }
 
+  /* SECTION ACCOMODATION */
+  #accomodation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    background-color: #f2f2f2;
+    border: 0px solid black;
+    border-radius: 15px;
+  }
+
+  /*H2 TITLE ACCOMODATION SECTION */
+  #accomodation h2 {
+    width: 100%;
+  }
+
   /* UL IN ACCOMODATION SECTION */
   #accomodation ul {
     display: flex;
@@ -73,16 +96,11 @@
   /* ARTICLE IN ACCOMODATION SECTION */
   #accomodation article {
     display: flex;
-    flex-direction: column;
-  }
-
-  /* H2 TITLE IN ACCOMODATION SECTION */
-  #accomodation h2 {
   }
 
   /* LINKS IN ACCOMODATION SECTION */
-  #accomodation a {
-    width: 100%;
+  #accomodation img {
+    height: 300px;
   }
 
   /* UL IN ASIDE SECTION */
@@ -92,19 +110,32 @@
     padding-left: 0;
   }
 
-  /* POPULAR SECTION */
+  /* MOST POPULAR SECTION */
   #popular {
+    margin-left: 50px;
+    border: 0px solid black;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+  }
+  /* POPULAR SECTION */
+  #popular img {
+    height: 200px;
   }
 
   /* ACTIVITY SECTION */
   #activity {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   /* H2 TITLE IN ACTIVITY SECTION */
   #activity h2 {
-    flex-basis: 100%;
+    width: 100%;
+  }
+
+  /* IMG IN ACTIVITY SECTION */
+  #activity img {
+    height: 130px;
   }
 
   /* FIRST CONTAINER IN FOOTER SECTION */
@@ -112,4 +143,20 @@
     display: flex;
     justify-content: space-around;
   }
+}
+
+/* CREATE CSS INFERIOR TO 1200px */
+@media handheld and (max-width: 1199px) {
+}
+
+/* CREATE CSS INFERIOR TO 992px */
+@media handheld and (max-width: 991px) {
+}
+
+/* CREATE CSS INFERIOR TO 768px */
+@media handheld and (max-width: 767px) {
+}
+
+/* CREATE CSS INFERIOR TO 576px */
+@media handheld and (max-width: 575px) {
 }
