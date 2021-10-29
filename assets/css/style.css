@@ -63,7 +63,7 @@ main {
   box-sizing: border-box;
   color: black;
   background-color: #f2f2f2;
-  font-size: 1.3em;
+  font-size: 20px;
 }
 
 /* FORMULAR SEARCH FIELD */
@@ -78,7 +78,7 @@ main {
 #search form input::placeholder {
   opacity: 1; /*Firefox*/
   color: black;
-  font-size: 1.2em;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -90,7 +90,7 @@ main {
   height: 50px;
   color: white;
   background-color: #0065fc;
-  font-size: 1em;
+  font-size: 15px;
   padding: 0 20px 0 20px;
   font-weight: bold;
 }
