@@ -203,8 +203,17 @@ main {
   color: black;
 }
 
-/**/
-.accomodation_card ul li i {
+/* Select all elements exepted first X */
+.three_stars ul li:nth-child(n + 4),
+.four_stars ul li:nth-child(n + 5),
+.five_stars ul li:nth-child(n + 6) {
+  color: darkgrey;
+}
+
+/* Select only first X elements */
+.three_stars ul li:nth-child(-n + 3),
+.four_stars ul li:nth-child(-n + 4),
+.five_stars ul li:nth-child(-n + 5) {
   color: #0065fc;
 }
 
