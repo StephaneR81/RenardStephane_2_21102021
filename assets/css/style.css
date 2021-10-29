@@ -257,11 +257,26 @@ aside ul {
   height: 200px;
 }
 
-/* POPULAR H2 TITLE*/
+/* POPULAR H2 TITLE */
 #popular h2 {
-  /* padding-left: 40px; */
-  display: inline-flex;
-  justify-content: space-around;
+  padding-left: 38px;
+}
+
+/* POPULAR ICON */
+#popular h2 i {
+  margin-left: 250px;
+}
+
+/* POPULAR CARD TITLE */
+#popular h3,
+#popular em {
+  color: black;
+  font-weight: bold;
+}
+
+/*POPULAR CARD SUBTITLE */
+#popular p {
+  color: black;
 }
 
 /* --------------------ACTIVITY SECTION-------------------- */
