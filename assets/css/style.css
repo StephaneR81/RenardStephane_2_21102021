@@ -27,14 +27,14 @@ header li {
 
 /* LINKS IN NAV SECTION */
 nav a {
-  padding-top: 30px;
-  color: darkgray;
+  padding-top: 28px;
+  color: black;
 }
 
 /* HOVER EVENT ON LINKS IN NAV SECTION */
 nav a:hover {
   color: #0065fc;
-  border-top: 2px solid #0065fc;
+  border-top: 3px solid #0065fc;
 }
 
 /*--------------------MAIN SECTION--------------------*/
@@ -117,12 +117,18 @@ main {
   list-style-type: none;
 }
 
+/* LIST ELEMENTS IN FILTERS*/
+#filters ul li {
+  margin-right: 30px; /* Space on the filter element's right side */
+}
+
 /*PARAGRAPHS IN FILTERS SECTION */
 #filters p {
   flex-wrap: wrap;
   width: 50%;
 }
 
+/* FILTERS ICONS */
 #filters ul li i {
   color: #0065fc;
   background-color: #deebff;
@@ -138,16 +144,22 @@ main {
 }
 
 #filters ul li a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   height: 50px;
   box-sizing: border-box;
   border: 2px solid #f2f2f2;
   border-radius: 25px;
-  padding-right: 20px;
   color: black;
   font-weight: bold;
+  padding-right: 20px;
 }
 
+#filters ul li:nth-child(4) {
+  min-width: 230px; /* Forced size for 4th filter to 230px*/
+}
+
+/* FILTER LINKS HOVER EVENT*/
 #filters ul li a:hover {
   background-color: #b6d4ff;
   box-shadow: 2px 2px 5px black;
@@ -179,6 +191,7 @@ main {
 /*H2 TITLE ACCOMODATION SECTION */
 #accomodation h2 {
   width: 100%;
+  padding-left: 48px;
 }
 
 /* UL IN ACCOMODATION SECTION */
