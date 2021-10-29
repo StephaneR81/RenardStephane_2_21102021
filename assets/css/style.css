@@ -191,6 +191,23 @@ main {
   padding-left: 40px;
 }
 
+/* H3 TITLE IN EACH ACCOMODATION CARD*/
+.accomodation_card h3,
+.accomodation_card em {
+  color: black;
+  font-weight: bold;
+}
+
+/* PARAGRAPH IN EACH ACCOMODATION CARD*/
+.accomodation_card p {
+  color: black;
+}
+
+/**/
+.accomodation_card ul li i {
+  color: #0065fc;
+}
+
 /* UL IN ACCOMODATION SECTION */
 #accomodation ul {
   display: flex;
