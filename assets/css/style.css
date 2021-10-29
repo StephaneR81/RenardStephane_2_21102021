@@ -1,147 +1,213 @@
-  /* BODY */
-  body {
-    margin: 1em;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-  }
+/* BODY */
+body {
+  margin: 1em;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
 
-  /* WHOLE PAGE LINKS */
-  a {
-    text-decoration: none;
-  }
+/* WHOLE PAGE LINKS */
+a {
+  text-decoration: none;
+}
 
-  /* HEADER FLEX CONTAINER */
-  header,
-  header ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding-left: 0;
-  }
+/*--------------------HEADER--------------------*/
 
-  /* HEADER LI ELEMENTS MENU */
-  header li {
-    margin-right: 50px;
-  }
+/* HEADER FLEX CONTAINER */
+header,
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
 
-  /* LINKS IN NAV SECTION */
-  nav a {
-    padding-top: 30px;
-    color: darkgray;
-  }
+/* HEADER LI ELEMENTS MENU */
+header li {
+  margin-right: 50px;
+}
 
-  /* HOVER EVENT ON LINKS IN NAV SECTION */
-  nav a:hover {
-    color: #0065fc;
-    border-top: 2px solid #0065fc;
-  }
+/* LINKS IN NAV SECTION */
+nav a {
+  padding-top: 30px;
+  color: darkgray;
+}
 
-  /* MAIN SECTION */
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* HOVER EVENT ON LINKS IN NAV SECTION */
+nav a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
 
-  /* ID #SEARCH SECTION */
-  #search {
-    width: 100%;
-  }
+/*--------------------MAIN SECTION--------------------*/
+/* MAIN SECTION */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*--------------------SEARCH SECTION--------------------*/
 
-  /* ID #FILTERS SECTION */
-  #filters {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-  }
+#search form label i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 25% 0 0 25%;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  color: black;
+  background-color: #f2f2f2;
+  font-size: 1.5em;
+}
 
-  /* UL IN FILTERS SECTION */
-  #filters ul {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    list-style-type: none;
-  }
+/* ID #SEARCH SECTION */
+#search {
+  width: 100%;
+}
 
-  /*PARAGRAPHS IN FILTERS SECTION */
-  #filters p {
-    flex-wrap: wrap;
-    width: 50%;
-  }
+/*--------------------FILTERS--------------------*/
 
-  /* SECTION ACCOMODATION */
-  #accomodation {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    background-color: #f2f2f2;
-    border: 0px solid black;
-    border-radius: 15px;
-  }
+/* ID #FILTERS SECTION */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
 
-  /*H2 TITLE ACCOMODATION SECTION */
-  #accomodation h2 {
-    width: 100%;
-  }
+/* UL IN FILTERS SECTION */
+#filters ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  list-style-type: none;
+}
 
-  /* UL IN ACCOMODATION SECTION */
-  #accomodation ul {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-  }
+/*PARAGRAPHS IN FILTERS SECTION */
+#filters p {
+  flex-wrap: wrap;
+  width: 50%;
+}
 
-  /* ARTICLE IN ACCOMODATION SECTION */
-  #accomodation article {
-    display: flex;
-  }
+#filters ul li i {
+  color: #0065fc;
+  background-color: #deebff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: -2px;
+  margin-left: -2px;
+  margin-right: 13px;
+}
 
-  /* LINKS IN ACCOMODATION SECTION */
-  #accomodation img {
-    height: 300px;
-  }
+#filters ul li a {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  padding-right: 20px;
+  color: black;
+  font-weight: bold;
+}
 
-  /* UL IN ASIDE SECTION */
-  aside ul {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-  }
+#filters ul li a:hover {
+  background-color: #cadcf8;
+  box-shadow: 2px 2px 5px black;
+}
 
-  /* MOST POPULAR SECTION */
-  #popular {
-    margin-left: 50px;
-    border: 0px solid black;
-    border-radius: 15px;
-    background-color: #f2f2f2;
-  }
-  /* POPULAR SECTION */
-  #popular img {
-    height: 200px;
-  }
+#filters p i {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  margin-right: 15px;
+}
 
-  /* ACTIVITY SECTION */
-  #activity {
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* --------------------ACCOMODATION SECTION-------------------- */
+/* SECTION ACCOMODATION */
+#accomodation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  background-color: #f2f2f2;
+  border: 0px solid black;
+  border-radius: 15px;
+}
 
-  /* H2 TITLE IN ACTIVITY SECTION */
-  #activity h2 {
-    width: 100%;
-  }
+/*H2 TITLE ACCOMODATION SECTION */
+#accomodation h2 {
+  width: 100%;
+}
 
-  /* IMG IN ACTIVITY SECTION */
-  #activity img {
-    height: 130px;
-  }
+/* UL IN ACCOMODATION SECTION */
+#accomodation ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
 
-  /* FIRST CONTAINER IN FOOTER SECTION */
-  #footer_container {
-    display: flex;
-    justify-content: space-around;
-  }
+/* ARTICLE IN ACCOMODATION SECTION */
+#accomodation article {
+  display: flex;
+}
 
+/* LINKS IN ACCOMODATION SECTION */
+#accomodation img {
+  height: 300px;
+}
 
+/* -------------------- POPULAR SECTION-------------------- */
+/* UL IN ASIDE SECTION */
+aside ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* MOST POPULAR SECTION */
+#popular {
+  margin-left: 50px;
+  border: 0px solid black;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+/* POPULAR SECTION */
+#popular img {
+  height: 200px;
+}
+
+/* --------------------ACTIVITY SECTION-------------------- */
+/* ACTIVITY SECTION */
+#activity {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* H2 TITLE IN ACTIVITY SECTION */
+#activity h2 {
+  width: 100%;
+}
+
+/* IMG IN ACTIVITY SECTION */
+#activity img {
+  height: 130px;
+}
+
+/* FIRST CONTAINER IN FOOTER SECTION */
+#footer_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* --------------------CSS FOR MOBILE VERSIONS-------------------- */
 /* CREATE CSS INFERIOR TO 1200px */
 @media all and (max-width: 1199px) {
 }
