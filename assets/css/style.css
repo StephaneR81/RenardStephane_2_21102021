@@ -1,7 +1,6 @@
 /* BODY */
 body {
-  min-width: 1200px;
-  margin: 50px;
+  margin: 20px;
   font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
@@ -178,11 +177,22 @@ main {
 #accomodation {
   display: flex;
   flex-wrap: wrap;
-  width: 66%;
+  justify-content: space-around;
+  width: 60%;
   background-color: #f2f2f2;
   border: 0px solid black;
-  border-radius: 15px;
-  margin-right: 15px;
+  border-radius: 20px;
+  margin-right: 50px;
+}
+
+/**/
+#show_more {
+  margin-top: 20px;
+  padding-bottom: 0;
+  margin-right: 85%;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
 }
 
 /*H2 TITLE ACCOMODATION SECTION */
@@ -191,14 +201,14 @@ main {
   padding-left: 40px;
 }
 
-/* H3 TITLE IN EACH ACCOMODATION CARD*/
+/* H3 TITLE IN EACH ACCOMODATION CARD */
 .accomodation_card h3,
 .accomodation_card em {
   color: black;
   font-weight: bold;
 }
 
-/* PARAGRAPH IN EACH ACCOMODATION CARD*/
+/* PARAGRAPH IN EACH ACCOMODATION CARD */
 .accomodation_card p {
   color: black;
 }
@@ -221,17 +231,57 @@ main {
 #accomodation ul {
   display: flex;
   list-style-type: none;
-  padding-left: 0;
+  padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
 }
 
-/* ARTICLE IN ACCOMODATION SECTION */
-#accomodation article {
-  display: flex;
+/* ACCOMODATION CARD ARTICLE */
+.accomodation_card {
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 30%;
+  height: 30%;
+  border: 0px solid;
+  border-radius: 20px;
 }
 
-/* LINKS IN ACCOMODATION SECTION */
-#accomodation img {
-  height: 300px;
+/* ACCOMODATION CARD HOVER EVENT */
+.accomodation_card:hover {
+  box-shadow: 2px 2px 5px rgb(22, 22, 22);
+  transition: 0.3s;
+}
+
+/* ACCOMODATION CARD LINK */
+.accomodation_card a {
+  display: inline-block;
+  width: 100%;
+  border: 0px solid;
+  border-radius: 20px;
+}
+
+/**/
+.accomodation_card figure {
+  width: 100%;
+  height: 15vw;
+  margin: 0 auto;
+  border: 0px solid;
+  border-radius: 20px 20px 0 0;
+}
+
+/**/
+.accomodation_card div {
+  height: 70%;
+  border: 0px solid;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+/**/
+.accomodation_card div img {
+  width: 100%;
+  height: 100%;
+  border: 0px solid;
+  border-radius: 20px 20px 0 0;
 }
 
 /* -------------------- POPULAR SECTION-------------------- */
@@ -246,9 +296,9 @@ aside ul {
 #popular {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 30%;
   border: 0px solid black;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: #f2f2f2;
 }
 
@@ -259,12 +309,12 @@ aside ul {
 
 /* POPULAR H2 TITLE */
 #popular h2 {
-  padding-left: 38px;
+  padding-left: 40px;
 }
 
 /* POPULAR ICON */
 #popular h2 i {
-  margin-left: 250px;
+  margin-left: 40px;
 }
 
 /* POPULAR CARD TITLE */
@@ -296,10 +346,36 @@ aside ul {
   height: 130px;
 }
 
+footer {
+  display: flex;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* FIRST CONTAINER IN FOOTER SECTION */
 #footer_container {
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
+}
+
+/* COLUMNS ABOUT ACCOMODATIONS ASSISTANCE */
+#footer_container div {
+  margin-right: 200px;
+}
+
+/* FOOTER H2 TITLES*/
+#footer_container h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* FOOTER LINKS */
+#footer_container a {
+  color: black;
 }
 
 /* --------------------CSS FOR MOBILE VERSIONS-------------------- */
