@@ -1,79 +1,80 @@
-/* BODY */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 20px;
+  color: black;
   font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
-/* WHOLE PAGE LINKS */
 a {
   text-decoration: none;
 }
 
 /*--------------------HEADER--------------------*/
 
-/* HEADER FLEX CONTAINER */
-header,
-header ul {
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding-left: 0;
 }
 
-/* HEADER LI ELEMENTS MENU */
 header li {
   margin-right: 50px;
 }
 
-/* LINKS IN NAV SECTION */
-nav a {
+header nav a {
   padding-top: 28px;
   color: black;
 }
 
-/* HOVER EVENT ON LINKS IN NAV SECTION */
-nav a:hover {
+header nav a:hover {
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
 
 /*--------------------MAIN SECTION--------------------*/
-/* MAIN SECTION */
+
 main {
   display: flex;
   flex-wrap: wrap;
 }
 /*--------------------SEARCH SECTION--------------------*/
 
-/* SEARCH FORMULAR */
 #search form {
   display: inline-flex;
 }
 
-/* SEARCH FORMULAR ICON*/
 #search form label i {
+  width: 50px;
+  height: 50px;
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
   border: 2px solid #f2f2f2;
   border-radius: 10px 0 0 10px;
-  width: 50px;
-  height: 50px;
-  box-sizing: border-box;
-  color: black;
+
   background-color: #f2f2f2;
+  color: black;
   font-size: 20px;
 }
 
-/* FORMULAR SEARCH FIELD */
 #search form input {
-  box-sizing: border-box;
   width: 220px;
   height: 50px;
+
   border: 2px solid #f2f2f2;
 }
 
-/* SEARCH FIELD PLACEHOLDER */
 #search form input::placeholder {
   opacity: 1; /*Firefox*/
   color: black;
@@ -81,141 +82,195 @@ main {
   font-weight: bold;
 }
 
-/* FORMULAR BUTTON */
 #search form button {
-  border: 2px solid #0065fc;
-  box-sizing: border-box;
-  border-radius: 0 10px 10px 0;
   height: 50px;
-  color: white;
-  background-color: #0065fc;
-  font-size: 15px;
-  padding: 0 20px 0 20px;
-  font-weight: bold;
-} 
 
-/* CURSOR POINTER ON BUTTON HOVER EVENT */
-#search form button:hover{
+  border: 2px solid #0065fc;
+  border-radius: 0 10px 10px 0;
+  padding: 0 20px 0 20px;
+
+  background-color: #0065fc;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#search form button:hover {
   cursor: pointer;
 }
 
 /*--------------------FILTERS--------------------*/
 
-/* ID #FILTERS SECTION */
 #filters {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
 }
 
-/* UL IN FILTERS SECTION */
 #filters ul {
   display: flex;
-  width: 50%;
-  justify-content: space-between;
   list-style-type: none;
 }
 
-/* LIST ELEMENTS IN FILTERS*/
 #filters ul li {
   margin-right: 30px; /* Space on the filter element's right side */
 }
 
-/*PARAGRAPHS IN FILTERS SECTION */
-#filters p {
-  flex-wrap: wrap;
-  width: 50%;
+#filters ul li:nth-child(4) {
+  min-width: 230px; /* Forced size for 4th filter to 230px */
 }
 
-/* FILTERS ICONS */
 #filters ul li i {
-  color: #0065fc;
-  background-color: #deebff;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+
   margin-top: -2px;
   margin-left: -2px;
   margin-right: 13px;
+
+  border-radius: 50%;
+
+  background-color: #deebff;
+  color: #0065fc;
 }
 
 #filters ul li a {
   display: inline-flex;
   align-items: center;
+
   height: 50px;
-  box-sizing: border-box;
+
   border: 2px solid #f2f2f2;
   border-radius: 25px;
+
+  padding-right: 20px;
+
   color: black;
   font-weight: bold;
-  padding-right: 20px;
 }
 
-#filters ul li:nth-child(4) {
-  min-width: 230px; /* Forced size for 4th filter to 230px*/
-}
-
-/* FILTER LINKS HOVER EVENT*/
 #filters ul li a:hover {
   background-color: #b6d4ff;
   box-shadow: 2px 2px 5px black;
 }
 
+#filters p {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 #filters p i {
-  width: 25px;
-  height: 25px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #0065fc;
+
+  width: 25px;
+  height: 25px;
+
   border: 1px solid #f2f2f2;
   border-radius: 50%;
+
   margin-right: 15px;
+
+  color: #0065fc;
 }
 
 /* --------------------ACCOMODATION SECTION-------------------- */
-/* SECTION ACCOMODATION */
+
 #accomodation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   width: 60%;
-  background-color: #f2f2f2;
-  border: 0px solid black;
+
   border-radius: 20px;
+
   margin-right: 50px;
+
+  background-color: #f2f2f2;
 }
 
-/**/
-#show_more {
-  margin-top: 20px;
-  padding-bottom: 0;
-  margin-right: 85%;
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-}
-
-/*H2 TITLE ACCOMODATION SECTION */
 #accomodation h2 {
   width: 100%;
+
   padding-left: 40px;
 }
 
-/* H3 TITLE IN EACH ACCOMODATION CARD */
-.accomodation_card h3,
-.accomodation_card em {
+.accomodation_card {
+  width: 30%;
+  height: 30%;
+
+  padding: 5px;
+  margin-bottom: 20px;
+
+  border-radius: 20px;
+
+  background-color: white;
+}
+
+.accomodation_card:hover {
+  box-shadow: 2px 2px 5px rgb(22, 22, 22);
+  transition: 0.3s;
+}
+
+.accomodation_card a {
+  display: block;
+
+  width: 100%;
+
+  border-radius: 20px;
+}
+
+.accomodation_card figure {
+  width: 100%;
+  height: 15vw;
+
+  margin: 0;
+
+  border-radius: 20px 20px 0 0;
+}
+
+.accomodation_card figure div {
+  height: 70%;
+
+  border-radius: 20px 20px 0 0;
+
+  overflow: hidden;
+}
+
+.accomodation_card figure div img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px 20px 0 0;
+}
+
+.accomodation_card figcaption {
+}
+
+.accomodation_card figcaption h3,
+.accomodation_card figcaption p em {
   color: black;
   font-weight: bold;
 }
 
-/* PARAGRAPH IN EACH ACCOMODATION CARD */
-.accomodation_card p {
+.accomodation_card figcaption p {
   color: black;
+}
+
+.accomodation_card figcaption ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
+}
+
+.accomodation_card figcaption ul li {
 }
 
 /* Select all elements exepted first X */
@@ -232,69 +287,24 @@ main {
   color: #0065fc;
 }
 
-/* UL IN ACCOMODATION SECTION */
-#accomodation ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
-}
+#show_more {
+  margin-top: 20px;
+  margin-right: 85%;
 
-/* ACCOMODATION CARD ARTICLE */
-.accomodation_card {
-  background-color: white;
-  padding: 5px;
-  margin-bottom: 20px;
-  width: 30%;
-  height: 30%;
-  border: 0px solid;
-  border-radius: 20px;
-}
+  color: black;
 
-/* ACCOMODATION CARD HOVER EVENT */
-.accomodation_card:hover {
-  box-shadow: 2px 2px 5px rgb(22, 22, 22);
-  transition: 0.3s;
-}
-
-/* ACCOMODATION CARD LINK */
-.accomodation_card a {
-  display: inline-block;
-  width: 100%;
-  border: 0px solid;
-  border-radius: 20px;
-}
-
-/**/
-.accomodation_card figure {
-  width: 100%;
-  height: 15vw;
-  margin: 0 auto;
-  border: 0px solid;
-  border-radius: 20px 20px 0 0;
-}
-
-/**/
-.accomodation_card div {
-  height: 70%;
-  border: 0px solid;
-  border-radius: 20px 20px 0 0;
-  overflow: hidden;
-}
-
-/**/
-.accomodation_card div img {
-  width: 100%;
-  height: 100%;
-  border: 0px solid;
-  border-radius: 20px 20px 0 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* -------------------- POPULAR SECTION-------------------- */
-/* UL IN ASIDE SECTION */
+
 aside ul {
   display: flex;
-  list-style-type: none;
+
   padding-left: 0;
+
+  list-style-type: none;
 }
 
 /* MOST POPULAR SECTION */
@@ -307,49 +317,142 @@ aside ul {
   background-color: #f2f2f2;
 }
 
-/* POPULAR SECTION */
-#popular img {
-  height: 200px;
-}
-
-/* POPULAR H2 TITLE */
-#popular h2 {
+#popular h2,
+#popular h2 i {
   padding-left: 40px;
 }
 
-/* POPULAR ICON */
-#popular h2 i {
-  margin-left: 40px;
+#popular a {
 }
 
-/* POPULAR CARD TITLE */
-#popular h3,
-#popular em {
+.popular_card {
+}
+
+.popular_card a {
+}
+
+.popular_card figure {
+}
+
+.popular_card figure div {
+}
+
+.popular_card figure div img {
+  height: 200px;
+}
+
+.popular_card figure figcaption {
+}
+
+.popular_card figure figcaption h3,
+.popular_card figure figcaption p em {
   color: black;
   font-weight: bold;
 }
 
-/*POPULAR CARD SUBTITLE */
-#popular p {
+.popular_card figure figcaption p {
   color: black;
 }
 
+.popular_card figure figcaption ul {
+}
+
+.popular_card figure figcaption ul li {
+}
+
+/*=======================================================*/
+/*=======================================================*/
+
 /* --------------------ACTIVITY SECTION-------------------- */
-/* ACTIVITY SECTION */
+
 #activity {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* H2 TITLE IN ACTIVITY SECTION */
 #activity h2 {
   width: 100%;
 }
 
-/* IMG IN ACTIVITY SECTION */
-#activity img {
-  height: 130px;
+.column {
 }
+
+.column a {
+}
+
+.activity_card {
+}
+
+.activity_card figure {
+  display: inline;
+}
+
+.activity_card figure div {
+  min-height: 200px;
+}
+
+.activity_card figure div img {
+  width: 100%;
+}
+
+.activity_card figure figcaption {
+}
+
+.activity_card figure figcaption h3 {
+}
+
+/*===============================DOUBLE COLUMN============================*/
+
+.double_column {
+}
+
+.double_column a {
+}
+
+/*========================CARD TOP=====================================*/
+
+.activity_card_top {
+}
+
+.activity_card_top figure {
+  display: inline;
+}
+
+.activity_card_top figure div {
+}
+
+.activity_card_top figure div img {
+}
+
+.activity_card_top figure figcaption {
+}
+
+.activity_card_top figure figcaption h3 {
+}
+
+/*=====================CARD BOTTOM=======================================*/
+
+.activity_card_bottom {
+}
+
+.activity_card_bottom figure {
+  display: inline;
+}
+
+.activity_card_bottom figure div {
+}
+
+.activity_card_bottom figure div img {
+}
+
+.activity_card_bottom figure figcaption {
+}
+
+.activity_card_bottom figure figcaption h3 {
+}
+
+/*===============================================================*/
+/* IMG IN ACTIVITY SECTION */
 
 footer {
   display: flex;
