@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 20px;
+  margin: 30px;
   color: black;
   font-family: Raleway, Arial, Helvetica, sans-serif;
 }
@@ -186,8 +186,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  /* align-content: flex-start; */
 
   width: 60%;
+  min-width: 350px;
 
   border-radius: 20px;
 
@@ -199,59 +201,55 @@ main {
 #accomodation h2 {
   width: 100%;
 
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 .accomodation_card {
-  width: 30%;
-  height: 30%;
+  min-width: 320px;
+  max-height: 270px;
 
-  padding: 5px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin: 10px;
 
   border-radius: 20px;
 
   background-color: white;
+
+  transition: box-shadow 0.5s;
 }
 
 .accomodation_card:hover {
   box-shadow: 2px 2px 5px rgb(22, 22, 22);
-  transition: 0.3s;
+  transition: box-shadow 0.2s;
 }
 
 .accomodation_card a {
   display: block;
 
   width: 100%;
+  height: 100%;
 
   border-radius: 20px;
 }
 
 .accomodation_card figure {
-  width: 100%;
-  height: 15vw;
+  display: contents;
 
-  margin: 0;
-
-  border-radius: 20px 20px 0 0;
-}
-
-.accomodation_card figure div {
-  height: 70%;
-
-  border-radius: 20px 20px 0 0;
-
-  overflow: hidden;
-}
-
-.accomodation_card figure div img {
   width: 100%;
   height: 100%;
 
   border-radius: 20px 20px 0 0;
 }
 
-.accomodation_card figcaption {
+.accomodation_card figure div {
+  display: flex;
+}
+
+.accomodation_card figure div img {
+  object-fit: cover;
+  width: 100%;
+  height: 140px;
+  border-radius: 10px 10px 0 0;
 }
 
 .accomodation_card figcaption h3,
@@ -270,9 +268,6 @@ main {
   padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
 }
 
-.accomodation_card figcaption ul li {
-}
-
 /* Select all elements exepted first X */
 .three_stars ul li:nth-child(n + 4),
 .four_stars ul li:nth-child(n + 5),
@@ -288,8 +283,9 @@ main {
 }
 
 #show_more {
-  margin-top: 20px;
-  margin-right: 85%;
+  min-width: 100%;
+
+  padding-left: 80px;
 
   color: black;
 
@@ -300,7 +296,7 @@ main {
 /* -------------------- POPULAR SECTION-------------------- */
 
 aside ul {
-  display: flex;
+  display: inline-flex;
 
   padding-left: 0;
 
@@ -310,38 +306,78 @@ aside ul {
 /* MOST POPULAR SECTION */
 #popular {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
   width: 30%;
-  border: 0px solid black;
+  min-width: 340px;
+
   border-radius: 20px;
+  padding: 10px;
+
   background-color: #f2f2f2;
 }
 
-#popular h2,
-#popular h2 i {
-  padding-left: 40px;
+#popular h2 {
+  padding-left: 15px;
+  margin-bottom: 100px;
 }
 
-#popular a {
+#popular h2 i {
+  padding-left: 50px;
 }
 
 .popular_card {
+  min-width: 320px;
+
+  margin: 10px;
+
+  border-radius: 20px;
+
+  overflow-wrap: break-word;
+
+  background-color: white;
+
+  transition: box-shadow 0.5s;
+}
+
+.popular_card:hover {
+  box-shadow: 2px 2px 5px rgb(22, 22, 22);
+  transition: box-shadow 0.2s;
 }
 
 .popular_card a {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
 }
 
 .popular_card figure {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+  border-radius: 20px 0 0 20px;
 }
 
 .popular_card figure div {
+  max-height: 200px;
+  max-width: 130px;
 }
 
 .popular_card figure div img {
-  height: 200px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 10px 0 0 10px;
 }
 
 .popular_card figure figcaption {
+  margin-left: 30px;
 }
 
 .popular_card figure figcaption h3,
@@ -355,13 +391,10 @@ aside ul {
 }
 
 .popular_card figure figcaption ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
 }
-
-.popular_card figure figcaption ul li {
-}
-
-/*=======================================================*/
-/*=======================================================*/
 
 /* --------------------ACTIVITY SECTION-------------------- */
 
@@ -373,8 +406,9 @@ aside ul {
 #activity h2 {
   width: 100%;
 }
-
+/* 
 .column {
+  
 }
 
 .column a {
@@ -384,38 +418,38 @@ aside ul {
 }
 
 .activity_card figure {
-  display: inline;
+  
 }
 
 .activity_card figure div {
-  min-height: 200px;
+  
 }
 
 .activity_card figure div img {
-  width: 100%;
+  
 }
 
 .activity_card figure figcaption {
 }
 
 .activity_card figure figcaption h3 {
-}
+} */
 
 /*===============================DOUBLE COLUMN============================*/
 
-.double_column {
+/* .double_column {
 }
 
 .double_column a {
-}
+} */
 
 /*========================CARD TOP=====================================*/
-
+/* 
 .activity_card_top {
 }
 
 .activity_card_top figure {
-  display: inline;
+ 
 }
 
 .activity_card_top figure div {
@@ -428,15 +462,15 @@ aside ul {
 }
 
 .activity_card_top figure figcaption h3 {
-}
+} */
 
 /*=====================CARD BOTTOM=======================================*/
 
-.activity_card_bottom {
+/* .activity_card_bottom {
 }
 
 .activity_card_bottom figure {
-  display: inline;
+  
 }
 
 .activity_card_bottom figure div {
@@ -449,7 +483,7 @@ aside ul {
 }
 
 .activity_card_bottom figure figcaption h3 {
-}
+} */
 
 /*===============================================================*/
 /* IMG IN ACTIVITY SECTION */
@@ -487,18 +521,19 @@ footer ul {
 }
 
 /* --------------------CSS FOR MOBILE VERSIONS-------------------- */
+
 /* CREATE CSS INFERIOR TO 1200px */
-@media all and (max-width: 1199px) {
-}
+/* @media all and (max-width: 1199px) {
+} */
 
 /* CREATE CSS INFERIOR TO 992px */
-@media all and (max-width: 991px) {
-}
+/* @media all and (max-width: 991px) {
+} */
 
 /* CREATE CSS INFERIOR TO 768px */
-@media all and (max-width: 767px) {
-}
+/* @media all and (max-width: 767px) {
+} */
 
 /* CREATE CSS INFERIOR TO 576px */
-@media all and (max-width: 575px) {
-}
+/* @media all and (max-width: 575px) {
+} */
