@@ -119,10 +119,6 @@ main {
   margin-right: 30px; /* Space on the filter element's right side */
 }
 
-#filters ul li:nth-child(4) {
-  min-width: 230px; /* Forced size for 4th filter to 230px */
-}
-
 #filters ul li i {
   display: inline-flex;
   justify-content: center;
