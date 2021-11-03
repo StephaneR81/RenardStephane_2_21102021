@@ -178,6 +178,13 @@ main {
   color: #0065fc;
 }
 
+/* -----WRAPPER ACCOMODATION + POPULAR SECTIONS----- */
+
+#accomodation_popular_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* --------------------ACCOMODATION SECTION-------------------- */
 
 #accomodation {
