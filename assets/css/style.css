@@ -461,6 +461,8 @@ aside ul {
 
 .activity_card figure figcaption h3 {
   color: black;
+
+  padding-left: 20px;
 }
 
 /*===============================DOUBLE COLUMN============================*/
@@ -512,6 +514,8 @@ aside ul {
 
 .activity_card_top figure figcaption h3 {
   color: black;
+
+  padding-left: 20px;
 }
 
 /*=====================CARD BOTTOM=======================================*/
@@ -541,6 +545,12 @@ aside ul {
   object-fit: cover;
 
   border-radius: 20px 20px 0 0;
+}
+
+.activity_card_bottom figure figcaption h3 {
+  color: black;
+
+  padding-left: 20px;
 }
 
 /*===============================================================*/
