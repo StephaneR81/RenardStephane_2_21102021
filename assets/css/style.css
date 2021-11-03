@@ -309,7 +309,6 @@ aside ul {
 }
 
 #popular {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -499,23 +498,26 @@ aside ul {
 
 footer {
   display: flex;
+  background-color: #f2f2f2;
 }
 
 footer ul {
   list-style-type: none;
+
   padding: 0;
 }
 
 /* FIRST CONTAINER IN FOOTER SECTION */
 #footer_container {
-  margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  width: 80%;
 }
 
 /* COLUMNS ABOUT ACCOMODATIONS ASSISTANCE */
 #footer_container div {
-  margin-right: 200px;
+  /* margin-right: 200px; */
 }
 
 /* FOOTER H2 TITLES*/
