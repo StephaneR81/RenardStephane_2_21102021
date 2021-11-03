@@ -181,6 +181,8 @@ main {
 /* -----WRAPPER ACCOMODATION + POPULAR SECTIONS----- */
 
 #accomodation_popular_wrapper {
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
 }
@@ -190,7 +192,7 @@ main {
 #accomodation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
   width: 65%;
 
@@ -202,26 +204,22 @@ main {
 
 #accomodation h2 {
   width: 100%;
-
-  /* padding-left: 40px; */
 }
 
 .accomodation_card {
-  min-width: 320px;
-  max-height: 270px;
+  width: 30%;
 
   padding: 10px;
-  margin: 10px;
+  margin-bottom: 30px;
 
   border-radius: 20px;
-
   background-color: white;
 
   transition: box-shadow 0.5s;
 }
 
 .accomodation_card:hover {
-  box-shadow: 2px 2px 5px rgb(22, 22, 22);
+  box-shadow: 2px 2px 10px rgb(22, 22, 22);
   transition: box-shadow 0.2s;
 }
 
@@ -235,22 +233,20 @@ main {
 }
 
 .accomodation_card figure {
-  display: contents;
-
-  width: 100%;
-  height: 100%;
+  margin: 0;
 
   border-radius: 20px 20px 0 0;
 }
 
 .accomodation_card figure div {
-  display: flex;
+  width: 100%;
 }
 
 .accomodation_card figure div img {
-  object-fit: cover;
   width: 100%;
-  height: 140px;
+  height: 130px;
+  object-fit: cover;
+
   border-radius: 10px 10px 0 0;
 }
 
@@ -262,11 +258,14 @@ main {
 
 .accomodation_card figcaption p {
   color: black;
+  margin: 0;
 }
 
 .accomodation_card figcaption ul {
   display: flex;
   list-style-type: none;
+  margin-bottom: 0;
+
   padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
 }
 
@@ -285,12 +284,9 @@ main {
 }
 
 #show_more {
-  min-width: 100%;
-
-  padding-left: 80px;
-
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
 
   color: black;
 
@@ -301,7 +297,7 @@ main {
 /* -------------------- POPULAR SECTION-------------------- */
 
 aside ul {
-  display: inline-flex;
+  display: flex;
 
   padding-left: 0;
 
@@ -323,24 +319,24 @@ aside ul {
 }
 
 #popular h2 {
+  display: flex;
   align-self: flex-start;
-
-  /* padding-left: 40px; */
+  margin-bottom: 19.92px;
 }
 
 #popular h2 i {
-  padding-left: 50px;
+  padding-left: 300px;
 }
 
 .popular_card {
-  width: 400px;
-  height: 200px;
+  width: 100%;
 
-  margin-top: 30px;
+  justify-content: space-around;
+
+  margin-bottom: 33px;
+  padding: 10px;
 
   border-radius: 20px;
-
-  overflow-wrap: break-word;
 
   background-color: white;
 
@@ -348,7 +344,7 @@ aside ul {
 }
 
 .popular_card:hover {
-  box-shadow: 2px 2px 5px rgb(22, 22, 22);
+  box-shadow: 2px 2px 10px rgb(22, 22, 22);
   transition: box-shadow 0.2s;
 }
 
@@ -364,28 +360,27 @@ aside ul {
 .popular_card figure {
   display: flex;
   flex-wrap: nowrap;
+  /* justify-content: space-between; */
 
-  margin: 10px;
+  margin: 0;
 
   border-radius: 20px 0 0 20px;
 }
 
 .popular_card figure div {
-  width: 130px;
-  height: 180px;
+  width: 30%;
 }
 
 .popular_card figure div img {
-  max-width: 130px;
-  height: 100%;
-
+  width: 100%;
+  height: 150px;
   object-fit: cover;
 
   border-radius: 10px 0 0 10px;
 }
 
 .popular_card figure figcaption {
-  margin-left: 30px;
+  padding-left: 30px;
 }
 
 .popular_card figure figcaption h3,
@@ -395,13 +390,18 @@ aside ul {
 }
 
 .popular_card figure figcaption p {
+  margin-bottom: 55px;
   color: black;
 }
 
 .popular_card figure figcaption ul {
   display: flex;
+
   list-style-type: none;
+
   padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
+
+  margin-bottom: 0;
 }
 
 /* --------------------ACTIVITY SECTION-------------------- */
@@ -513,11 +513,6 @@ footer ul {
   justify-content: space-between;
 
   width: 80%;
-}
-
-/* COLUMNS ABOUT ACCOMODATIONS ASSISTANCE */
-#footer_container div {
-  /* margin-right: 200px; */
 }
 
 /* FOOTER H2 TITLES*/
