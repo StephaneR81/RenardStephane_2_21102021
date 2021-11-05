@@ -326,14 +326,16 @@ aside ul {
   background-color: #f2f2f2;
 }
 
-#popular h2 {
+#title_wrapper {
   display: flex;
-  align-self: flex-start;
-  margin-bottom: 19.92px;
+  justify-content: space-between;
+  align-items: baseline;
+
+  width: 100%;
 }
 
-#popular h2 i {
-  padding-left: 300px;
+#popular_icon {
+  font-size: 20px;
 }
 
 .popular_card {
