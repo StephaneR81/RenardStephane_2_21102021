@@ -20,6 +20,11 @@ header {
   margin: 0 30px;
 }
 
+header a img {
+  height: 50px;
+  padding-left: 15px;
+}
+
 header nav ul {
   display: flex;
   justify-content: space-between;
