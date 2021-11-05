@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
 
-  margin: 0 30px;
+  margin: 0 100px;
 }
 
 header a img {
@@ -52,7 +52,7 @@ main {
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0 30px;
+  margin: 0 100px;
 }
 /*--------------------SEARCH SECTION--------------------*/
 
