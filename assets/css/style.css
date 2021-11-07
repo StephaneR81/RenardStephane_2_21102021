@@ -655,15 +655,11 @@ footer ul {
 
 /* --------------------CSS FOR MOBILE VERSIONS-------------------- */
 
-/* CREATE CSS INFERIOR TO 1200px */
-/* @media screen and (max-width: 1199px) {
-} */
+/* CREATE CSS BETWEEN 768px AND 991px (TABLETTE) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
 
-/* CREATE CSS INFERIOR TO 992px */
-/* @media screen and (max-width: 991px) {
-} */
-
-/* CREATE CSS INFERIOR TO 768px */
+/* CREATE CSS INFERIOR TO 768px (MOBILE) */
 @media screen and (max-width: 767px) {
   * {
     box-sizing: border-box;
@@ -672,7 +668,6 @@ footer ul {
   body {
     color: black;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    width: 767px;
     max-width: 767px;
   }
 
@@ -681,39 +676,25 @@ footer ul {
   }
 
   header {
-    flex-direction: column;
-  }
-
-  header a {
-    text-align: center;
-  }
-
-  header a img {
-    padding: 0;
-  }
-
-  header nav {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+header nav ul{
+
+}
+  header nav ul li a{
+  border-bottom:3px solid gray;
   }
 
-  header nav ul {
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  header nav ul li {
-    border-bottom: 3px solid #f2f2f2;
-    width: 50%;
-    text-align: center;
-    text-indent: 0;
-    list-style-type: none;
-  }
-
-  header nav a:hover {
-    color: #0065fc;
+  header nav ul li a:hover{
     border-top: none;
-    border-bottom: 3px solid #0065fc;
+    
   }
+   
+  }
+
+ 
 }
 
 /* CREATE CSS INFERIOR TO 576px */
