@@ -29,6 +29,7 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+
   padding-left: 0;
 }
 
@@ -38,11 +39,13 @@ header li {
 
 header nav a {
   padding-top: 15px;
+
   color: black;
 }
 
 header nav a:hover {
   color: #0065fc;
+
   border-top: 3px solid #0065fc;
 }
 
@@ -122,6 +125,10 @@ main {
   align-items: center;
 }
 
+#filters h2 {
+  font-size: 25px;
+}
+
 #filters ul {
   display: flex;
   list-style-type: none;
@@ -152,6 +159,7 @@ main {
 #filters ul li a {
   display: inline-flex;
   align-items: center;
+  overflow-wrap: break-word;
 
   height: 50px;
 
@@ -161,6 +169,7 @@ main {
   padding-right: 20px;
 
   color: black;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -193,8 +202,6 @@ main {
 /* -----WRAPPER ACCOMODATION + POPULAR SECTIONS----- */
 
 #accomodation_popular_wrapper {
-  width: 100%;
-
   display: flex;
   justify-content: space-between;
 }
@@ -228,6 +235,8 @@ main {
   background-color: white;
 
   transition: box-shadow 0.5s;
+
+  font-size: 13px;
 }
 
 .accomodation_card:hover {
@@ -235,28 +244,20 @@ main {
   transition: box-shadow 0.2s;
 }
 
-.accomodation_card a {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  border-radius: 20px;
-}
-
 .accomodation_card figure {
+  width: 100%;
+
   margin: 0;
 
   border-radius: 20px 20px 0 0;
 }
 
 .accomodation_card figure div {
-  width: 100%;
+  height: min-content;
 }
 
 .accomodation_card figure div img {
   width: 100%;
-  height: 130px;
   object-fit: cover;
 
   border-radius: 10px 10px 0 0;
@@ -298,6 +299,7 @@ main {
 #show_more {
   margin-top: 10px;
   margin-bottom: 10px;
+
   width: 100%;
 
   color: black;
@@ -355,6 +357,8 @@ aside ul {
   background-color: white;
 
   transition: box-shadow 0.5s;
+
+  font-size: 13px;
 }
 
 .popular_card:hover {
@@ -362,19 +366,11 @@ aside ul {
   transition: box-shadow 0.2s;
 }
 
-.popular_card a {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  border-radius: 20px;
-}
-
 .popular_card figure {
   display: flex;
   flex-wrap: nowrap;
-  /* justify-content: space-between; */
+
+  width: 100%;
 
   margin: 0;
 
@@ -382,12 +378,16 @@ aside ul {
 }
 
 .popular_card figure div {
-  width: 30%;
+  width: 50%;
+}
+
+.popular_card figure figcaption {
+  width: 50%;
 }
 
 .popular_card figure div img {
   width: 100%;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
 
   border-radius: 10px 0 0 10px;
@@ -789,12 +789,12 @@ footer ul {
   }
 
   /* POPULAR SECTION */
-  #popular{
+  #popular {
     width: 100%;
   }
 
   /* ACCOMODATION SECTION */
-  #accomodation{
+  #accomodation {
     width: 100%;
     margin-top: 20px;
   }
@@ -807,7 +807,10 @@ footer ul {
     margin-right: 10px;
   }
 
-  .column1, .column2, .column3, .column4 {
+  .column1,
+  .column2,
+  .column3,
+  .column4 {
     width: 100%;
   }
 
