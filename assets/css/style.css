@@ -114,10 +114,6 @@ main {
   display: none;
 }
 
-#text_button {
-  display: inline;
-}
-
 /*--------------------FILTERS--------------------*/
 
 #filters {
@@ -186,7 +182,7 @@ main {
   width: 25px;
   height: 25px;
 
-  border: 1px solid #f2f2f2;
+  border: 1px solid #c2bebe;
   border-radius: 50%;
 
   margin-right: 15px;
@@ -681,7 +677,8 @@ footer ul {
   }
 
   main {
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   a {
@@ -729,14 +726,96 @@ footer ul {
   }
 
   #search h1 {
-    font-size: 30px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  #search p {
+    font-size: 18px;
   }
 
   #text_button {
     display: none;
   }
-}
 
-/* CREATE CSS INFERIOR TO 576px */
-/* @media screen and (max-width: 575px) {
-} */
+  #glass_button {
+    display: block;
+  }
+
+  /* SECTION FILTERS */
+
+  #filters ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  #filters {
+    display: flex;
+  }
+
+  #filters h2 {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-size: 23px;
+  }
+
+  #filters ul {
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  #filters ul li {
+    margin-top: 10px;
+  }
+
+  #filters p {
+    font-size: 18px;
+  }
+
+  #filters p i {
+    float: left;
+    clear: both;
+  }
+
+  /* ACCOMODATION POPULAR GLOBAL WRAPPER */
+
+  #accomodation_popular_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* POPULAR SECTION */
+  #popular{
+    width: 100%;
+  }
+
+  /* ACCOMODATION SECTION */
+  #accomodation{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* ACTIVITY SECTION */
+  #activity {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .column1, .column2, .column3, .column4 {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  #footer_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 20px;
+  }
+}
