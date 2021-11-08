@@ -673,8 +673,8 @@ footer ul {
   }
 
   main {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   a {
@@ -787,18 +787,68 @@ footer ul {
   /* POPULAR SECTION */
   #popular {
     width: 100%;
+
+    border-radius: 0;
   }
 
   /* ACCOMODATION SECTION */
   #accomodation {
     display: flex;
     flex-direction: column;
+
     width: 100%;
+
     margin-top: 20px;
+
+    background-color: white;
   }
 
   .accomodation_card {
     width: 100%;
+  }
+
+  .accomodation_card figure div img {
+    width: 100%;
+    height: 120px;
+    max-height: 100%;
+  }
+
+  .popular_card {
+    width: 100%;
+    height: 100%;
+
+    padding: 5px;
+
+    box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  }
+
+  .popular_card:hover {
+    box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  }
+
+  .popular_card figure figcaption{
+    padding-left: 0;
+  }
+
+  .popular_card figure figcaption p {
+    margin-bottom: 50px;
+  }
+
+  .popular_card figure div{
+    width: 40%;
+
+    margin-right: 10px;
+  }
+
+  .popular_card figure div img {
+    width: 100%;
+    height: 150px;
+
+    max-height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 15px 0 0 15px;
   }
 
   /* ACTIVITY SECTION */
