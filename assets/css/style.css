@@ -659,10 +659,6 @@ footer ul {
 
 /* --------------------CSS FOR MOBILE VERSIONS-------------------- */
 
-/* CREATE CSS BETWEEN 768px AND 991px (TABLETTE) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-}
-
 /* CREATE CSS INFERIOR TO 768px (MOBILE) */
 @media screen and (max-width: 767px) {
   * {
@@ -795,8 +791,14 @@ footer ul {
 
   /* ACCOMODATION SECTION */
   #accomodation {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 20px;
+  }
+
+  .accomodation_card {
+    width: 100%;
   }
 
   /* ACTIVITY SECTION */
@@ -821,4 +823,8 @@ footer ul {
     padding: 0;
     margin-left: 20px;
   }
+}
+
+/* CREATE CSS BETWEEN 768px AND 991px (TABLETTE) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
 }
