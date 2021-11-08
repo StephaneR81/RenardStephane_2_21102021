@@ -805,11 +805,35 @@ footer ul {
 
   .accomodation_card {
     width: 100%;
+
+    box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  }
+
+  .accomodation_card figure div {
+    width: 100%;
+    height: 120%;
+
+    max-height: 120px;
+  }
+
+  .accomodation_card figure figcaption h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .accomodation_card figure figcaption p {
+    margin-top: 10px;
+  }
+
+  .accomodation_card figure figcaption ul {
+    margin-top: 10px;
   }
 
   .accomodation_card figure div img {
     width: 100%;
     height: 120px;
+
     max-height: 100%;
   }
 
@@ -826,15 +850,27 @@ footer ul {
     box-shadow: 2px 2px 30px rgb(204, 203, 203);
   }
 
-  .popular_card figure figcaption{
+  .popular_card figure figcaption {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     padding-left: 0;
   }
 
-  .popular_card figure figcaption p {
-    margin-bottom: 50px;
+  .popular_card figure figcaption h3 {
+    font-size: 15px;
   }
 
-  .popular_card figure div{
+  .popular_card figure figcaption p {
+    margin: 0;
+  }
+
+  .popular_card figure figcaption ul {
+    position: absolute;
+    top: 120px;
+  }
+
+  .popular_card figure div {
     width: 40%;
 
     margin-right: 10px;
