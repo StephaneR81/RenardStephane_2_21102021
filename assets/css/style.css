@@ -901,17 +901,23 @@ footer ul {
     margin-top: 20px;
   }
 
+  #activity h3 {
+    font-size: 13px;
+  }
+
+  #activity figure {
+    width: 100%;
+  }
+
   .column1,
   .column3 {
     width: 100%;
     height: fit-content;
   }
 
-  .column1 article,
-  .column2 article,
-  .column3 article,
-  .column4 article {
-    /* margin-top: 50px; */
+  .column1 .activity_card,
+  .column2 .activity_card {
+    margin: 0;
   }
 
   .column1 .activity_card a,
@@ -945,9 +951,22 @@ footer ul {
   .column2,
   .column4 {
     width: 100%;
-
-
     height: fit-content;
+  }
+
+  .column2 .activity_card_top,
+  .column4 .activity_card_top,
+  .column2 .activity_card_bottom,
+  .column4 .activity_card_bottom {
+    margin: 0;
+  }
+
+  .column2 .activity_card_top a figure,
+  .column4 .activity_card_top a figure,
+  .column2 .activity_card_bottom a figure,
+  .column4 .activity_card_bottom a figure {
+    width: 100%;
+    height: 100%;
   }
 
   .column2 .activity_card_top a figure div,
@@ -955,7 +974,7 @@ footer ul {
   .column2 .activity_card_bottom a figure div,
   .column4 .activity_card_bottom a figure div {
     width: 100%;
- 
+    height: 100px;
   }
 
   .column2 .activity_card_top a figure div img,
@@ -963,7 +982,7 @@ footer ul {
   .column2 .activity_card_bottom a figure div img,
   .column4 .activity_card_bottom a figure div img {
     width: 100%;
- 
+    height: 100%;
 
     object-fit: cover;
   }
