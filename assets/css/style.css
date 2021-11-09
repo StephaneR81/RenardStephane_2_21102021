@@ -916,6 +916,7 @@ footer ul {
   .column3 {
     width: 100%;
     height: initial;
+    margin-top: 30px;
   }
 
   .column1 .activity_card,
@@ -955,10 +956,7 @@ footer ul {
   .column2,
   .column4 {
     width: 100%;
-    height: initial
-
-    
-
+    height: initial;
   }
 
   .column2 .activity_card_top,
@@ -968,7 +966,8 @@ footer ul {
     width: 100%;
     height: initial;
 
-    margin: 0;
+    /* margin: 0; */
+    margin-top: 30px;
   }
 
   .column2 .activity_card_top a figure,
@@ -976,6 +975,7 @@ footer ul {
   .column2 .activity_card_bottom a figure,
   .column4 .activity_card_bottom a figure {
     width: 100%;
+    height: initial;
   }
 
   .column2 .activity_card_top a figure div,
