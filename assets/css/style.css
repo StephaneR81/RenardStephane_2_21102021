@@ -1,3 +1,6 @@
+/*=================================================================*/
+/*=================== CSS FOR DESKTOP >= 992px ====================*/
+/*=================================================================*/
 * {
   box-sizing: border-box;
 }
@@ -11,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-/*--------------------HEADER--------------------*/
+/*========== HEADER DESKTOP ==========*/
 
 header {
   display: flex;
@@ -49,7 +52,7 @@ header nav a:hover {
   border-top: 3px solid #0065fc;
 }
 
-/*--------------------MAIN SECTION--------------------*/
+/*========== MAIN SECTION DESKTOP ==========*/
 
 main {
   display: flex;
@@ -57,7 +60,8 @@ main {
 
   margin: 0 100px;
 }
-/*--------------------SEARCH SECTION--------------------*/
+
+/*========== SEARCH SECTION DESKTOP ==========*/
 
 #search form {
   display: inline-flex;
@@ -117,7 +121,7 @@ main {
   display: none;
 }
 
-/*--------------------FILTERS--------------------*/
+/*========== FILTERS SECTION DESKTOP==========*/
 
 #filters {
   display: flex;
@@ -135,7 +139,7 @@ main {
 }
 
 #filters ul li {
-  margin-right: 30px; /* Space on the filter element's right side */
+  margin-right: 30px;
 }
 
 #filters ul li i {
@@ -199,14 +203,14 @@ main {
   color: #0065fc;
 }
 
-/* -----WRAPPER ACCOMODATION + POPULAR SECTIONS----- */
+/*========== WRAPPER (ACCOMODATION + POPULAR SECTIONS) DESKTOP ==========*/
 
 #accomodation_popular_wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-/* --------------------ACCOMODATION SECTION-------------------- */
+/*========== ACCOMODATION SECTION DESKTOP ==========*/
 
 #accomodation {
   display: flex;
@@ -304,7 +308,7 @@ main {
   font-weight: bold;
 }
 
-/* -------------------- POPULAR SECTION-------------------- */
+/*========== POPULAR SECTION DESKTOP ==========*/
 
 aside ul {
   display: flex;
@@ -341,9 +345,9 @@ aside ul {
 }
 
 .popular_card {
-  width: 100%;
-
   justify-content: space-around;
+
+  width: 100%;
 
   margin-bottom: 33px;
   padding: 10px;
@@ -414,7 +418,7 @@ aside ul {
   margin-bottom: 0;
 }
 
-/* --------------------ACTIVITY SECTION-------------------- */
+/*========== ACTIVITY SECTION DESKTOP ==========*/
 
 #activity {
   display: flex;
@@ -439,7 +443,7 @@ aside ul {
   line-height: 5px;
 }
 
-/* ======================SINGLE COLUMNS========================= */
+/*========== ACTIVITY SECTION SINGLE COLUMNS (1 AND 3) DESKTOP ==========*/
 
 .column1,
 .column3 {
@@ -485,7 +489,7 @@ aside ul {
   border-radius: 20px 20px 0 0;
 }
 
-/*===============================DOUBLE PICTURE COLUMN============================*/
+/*========== ACTIVITY SECTION -> DOUBLE PICTURE COLUMNS (2 AND 4) DESKTOP ==========*/
 
 .column2,
 .column4 {
@@ -501,7 +505,7 @@ aside ul {
   height: 100%;
 }
 
-/*========================COLUMN 2 TOP CARD=====================================*/
+/*========== COLUMN 2 -> TOP CARD DESKTOP ==========*/
 
 .column2 .activity_card_top {
   height: 55%;
@@ -532,7 +536,7 @@ aside ul {
   border-radius: 20px 20px 0 0;
 }
 
-/*=====================COLUMN 2 BOTTOM CARD=======================================*/
+/*========== COLUMN 2 -> BOTTOM CARD DESKTOP ==========*/
 
 .column2 .activity_card_bottom {
   height: 37%;
@@ -561,7 +565,7 @@ aside ul {
   border-radius: 20px 20px 0 0;
 }
 
-/*========================COLUMN 4 TOP CARD=====================================*/
+/*========== COLUMN 4 -> TOP CARD DESKTOP ==========*/
 
 .column4 .activity_card_top {
   height: 46%;
@@ -592,7 +596,7 @@ aside ul {
   border-radius: 20px 20px 0 0;
 }
 
-/*=====================COLUMN 4 BOTTOM CARD=======================================*/
+/*========== COLUMN 4 -> BOTTOM CARD DESKTOP ==========*/
 
 .column4 .activity_card_bottom {
   height: 46%;
@@ -621,7 +625,7 @@ aside ul {
   border-radius: 20px 20px 0 0;
 }
 
-/*===============================================================*/
+/*========== FOOTER DESKTOP ==========*/
 
 footer {
   display: flex;
@@ -647,20 +651,19 @@ footer ul {
   width: 70%;
 }
 
-/* FOOTER H2 TITLES*/
 #footer_container h2 {
   font-size: 20px;
   font-weight: bold;
 }
 
-/* FOOTER LINKS */
 #footer_container a {
   color: black;
 }
 
-/* --------------------CSS FOR MOBILE VERSIONS-------------------- */
+/*=========================================================================*/
+/*==================== CSS FOR MOBILE VERSIONS < 768px ====================*/
+/*=========================================================================*/
 
-/* CREATE CSS INFERIOR TO 768px (MOBILE) */
 @media screen and (max-width: 767px) {
   * {
     box-sizing: border-box;
@@ -733,6 +736,7 @@ footer ul {
     border-bottom: 3px solid #0065fc;
   }
 
+  /*========== SEARCH SECTION FOR MOBILES < 768px ==========*/
   #search {
     margin-right: 10px;
     margin-left: 10px;
@@ -757,7 +761,7 @@ footer ul {
     display: block;
   }
 
-  /* SECTION FILTERS */
+  /*========== FILTERS SECTION FOR MOBILES < 768px ==========*/
 
   #filters {
     display: flex;
@@ -799,13 +803,11 @@ footer ul {
     clear: both;
   }
 
-  /* ACCOMODATION POPULAR GLOBAL WRAPPER */
+  /*========== (ACCOMODATION + POPULAR) WRAPPER FOR MOBILES < 768px ==========*/
 
   #accomodation_popular_wrapper {
     display: flex;
     flex-direction: column-reverse;
-
-    /* width: 100%; */
   }
 
   /* POPULAR SECTION */
@@ -819,7 +821,7 @@ footer ul {
     font-size: 25px;
   }
 
-  /* ACCOMODATION SECTION */
+  /*========== ACCOMODATION SECTION FOR MOBILES < 768px ==========*/
   #accomodation {
     display: flex;
     flex-direction: column;
@@ -868,7 +870,7 @@ footer ul {
     max-height: 100%;
   }
 
-  /* POPULAR SECTION MOBILES < 768px */
+  /*========== POPULAR SECTION FOR MOBILES < 768px ==========*/
   .popular_card {
     width: 100%;
     height: 100%;
@@ -921,7 +923,7 @@ footer ul {
     border-radius: 15px 0 0 15px;
   }
 
-  /* ACTIVITY SECTION MOBILES <768px */
+  /*========== ACTIVITY SECTION FOR MOBILES < 768px ==========*/
   #activity {
     display: flex;
     flex-direction: column;
@@ -954,7 +956,6 @@ footer ul {
   .column3 .activity_card {
     width: 100%;
     height: initial;
-    /* margin: 0; */
   }
 
   .column1 .activity_card a,
@@ -997,7 +998,6 @@ footer ul {
   .column4 .activity_card_bottom {
     width: 100%;
     height: initial;
-
     height: 170px;
 
     margin: initial;
@@ -1031,7 +1031,7 @@ footer ul {
     object-fit: cover;
   }
 
-  /* FOOTER */
+  /*========== FOOTER SECTION FOR MOBILES < 768px ==========*/
 
   footer {
     padding-top: 30px;
