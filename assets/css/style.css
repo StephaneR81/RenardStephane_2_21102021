@@ -23,12 +23,12 @@ header {
   margin: 0 100px;
 }
 
-header a img {
+header img {
   height: 50px;
   padding-left: 15px;
 }
 
-header nav ul {
+header ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -63,11 +63,11 @@ main {
 
 /*========== SEARCH SECTION DESKTOP ==========*/
 
-#search form {
+form {
   display: inline-flex;
 }
 
-#search form label i {
+form label {
   width: 50px;
   height: 50px;
 
@@ -83,7 +83,7 @@ main {
   font-size: 20px;
 }
 
-#search form input {
+form input {
   width: 220px;
   height: 50px;
 
@@ -92,14 +92,14 @@ main {
   border: 2px solid #f2f2f2;
 }
 
-#search form input::placeholder {
+form input::placeholder {
   opacity: 1; /*Firefox*/
   color: black;
   font-size: 15px;
   font-weight: bold;
 }
 
-#search form button {
+form button {
   height: 50px;
 
   border: 2px solid #0065fc;
@@ -113,11 +113,11 @@ main {
   font-weight: bold;
 }
 
-#search form button:hover {
+form button:hover {
   cursor: pointer;
 }
 
-#glass_button {
+.glass_button {
   display: none;
 }
 
@@ -130,19 +130,24 @@ main {
 }
 
 #filters h2 {
-  font-size: 25px;
+  display: inline-block;
+
+  font-size: 18px;
 }
 
 #filters ul {
   display: flex;
+
   list-style-type: none;
+
+  padding-left: 10px;
 }
 
-#filters ul li {
-  margin-right: 30px;
+#filters li {
+  margin-right: 13px;
 }
 
-#filters ul li i {
+#filters ul i {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -158,26 +163,26 @@ main {
 
   background-color: #deebff;
   color: #0065fc;
+  font-size: 18px;
 }
 
-#filters ul li a {
+#filters a {
   display: inline-flex;
   align-items: center;
-  overflow-wrap: break-word;
 
   height: 50px;
 
   border: 2px solid #f2f2f2;
   border-radius: 25px;
 
-  padding-right: 20px;
+  padding-right: 15px;
 
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
-#filters ul li a:hover {
+#filters a:hover {
   background-color: #b6d4ff;
   box-shadow: 2px 2px 5px black;
 }
@@ -230,7 +235,10 @@ main {
 }
 
 .accomodation_card {
-  width: 30%;
+  width: 31%;
+
+  height: 250px;
+  min-height: 250px;
 
   padding: 10px;
   margin-bottom: 30px;
@@ -249,34 +257,40 @@ main {
 }
 
 .accomodation_card figure {
-  width: 100%;
-
   margin: 0;
-
-  border-radius: 20px 20px 0 0;
 }
 
-.accomodation_card figure div img {
+.accomodation_card img {
   width: 100%;
+  height: 100px;
+
+  min-height: 100px;
+
   object-fit: cover;
 
   border-radius: 10px 10px 0 0;
 }
 
-.accomodation_card figcaption h3,
-.accomodation_card figcaption p em {
+.accomodation_card h3 {
+  height: 36px;
+}
+
+.accomodation_card h3,
+.accomodation_card em {
   color: black;
   font-weight: bold;
 }
 
-.accomodation_card figcaption p {
+.accomodation_card p {
   color: black;
   margin: 0;
 }
 
-.accomodation_card figcaption ul {
+.accomodation_card ul {
   display: flex;
+
   list-style-type: none;
+
   margin-bottom: 0;
 
   padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
@@ -296,7 +310,7 @@ main {
   color: #0065fc;
 }
 
-#show_more {
+.show_more {
   margin-top: 10px;
   margin-bottom: 10px;
 
@@ -658,6 +672,14 @@ footer ul {
 
 #footer_container a {
   color: black;
+}
+
+/*=========================================================================*/
+/*==================== CSS FOR TABLET VERSIONS  768px TO 1024px ====================*/
+/*=========================================================================*/
+
+/* CREATE CSS BETWEEN 768px AND 991px (TABLETTES) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 }
 
 /*=========================================================================*/
@@ -1061,8 +1083,4 @@ footer ul {
 
     margin-left: 20px;
   }
-}
-
-/* CREATE CSS BETWEEN 768px AND 991px (TABLETTES) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
 }
