@@ -56,7 +56,8 @@ header nav a:hover {
 
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
 
   margin: 0 10px;
 }
