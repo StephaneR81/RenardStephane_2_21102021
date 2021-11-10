@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
 
-  margin: 0 100px;
+  margin: 0 10px;
 }
 
 header img {
@@ -58,7 +58,7 @@ main {
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0 100px;
+  margin: 0 10px;
 }
 
 /*========== SEARCH SECTION DESKTOP ==========*/
@@ -221,6 +221,7 @@ form button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: initial;
 
   width: 65%;
 
@@ -232,16 +233,18 @@ form button:hover {
 
 #accomodation h2 {
   width: 100%;
+  height: 29px;
+
+  font-size: 20px;
+
+  margin: 0px;
 }
 
 .accomodation_card {
-  width: 31%;
+  width: 32%;
 
-  height: 250px;
-  min-height: 250px;
-
+  margin-top: 30px;
   padding: 10px;
-  margin-bottom: 30px;
 
   border-radius: 20px;
   background-color: white;
@@ -335,8 +338,8 @@ aside ul {
 #popular {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: nowrap;
+  align-content: space-around;
 
   width: 33%;
 
@@ -354,6 +357,12 @@ aside ul {
   width: 100%;
 }
 
+#title_wrapper h2 {
+  font-size: 20px;
+  height: 29px;
+  margin: 0px;
+}
+
 #popular_icon {
   font-size: 20px;
 }
@@ -363,7 +372,7 @@ aside ul {
 
   width: 100%;
 
-  margin-bottom: 33px;
+  margin-top: 30px;
   padding: 10px;
 
   border-radius: 20px;
@@ -384,52 +393,46 @@ aside ul {
   display: flex;
   flex-wrap: nowrap;
 
-  width: 100%;
-
   margin: 0;
 
   border-radius: 20px 0 0 20px;
 }
 
-.popular_card figure div {
-  width: 50%;
+.popular_card div {
+  margin-right: 15px;
 }
 
-.popular_card figure figcaption {
-  width: 50%;
-}
+.popular_card img {
+  width: 100px;
+  height: 135px;
 
-.popular_card figure div img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 
   border-radius: 10px 0 0 10px;
 }
 
-.popular_card figure figcaption {
-  padding-left: 30px;
-}
-
-.popular_card figure figcaption h3,
-.popular_card figure figcaption p em {
+.popular_card h3,
+.popular_card em {
   color: black;
   font-weight: bold;
 }
 
-.popular_card figure figcaption p {
-  margin-bottom: 55px;
+.popular_card h3 {
+  height: 36px;
+}
+
+.popular_card p {
+  margin-bottom: 35px;
   color: black;
 }
 
-.popular_card figure figcaption ul {
+.popular_card ul {
   display: flex;
 
   list-style-type: none;
 
-  padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
-
-  margin-bottom: 0;
+  padding: 0; /* ALIGN RATING STARS ON THE LEFT */
+  margin: 0;
 }
 
 /*========== ACTIVITY SECTION DESKTOP ==========*/
@@ -675,7 +678,7 @@ footer ul {
 }
 
 /*=========================================================================*/
-/*==================== CSS FOR TABLET VERSIONS  768px TO 1024px ====================*/
+/*==================== CSS FOR TABLET VERSIONS FROM 768px TO 1024px ====================*/
 /*=========================================================================*/
 
 /* CREATE CSS BETWEEN 768px AND 991px (TABLETTES) */
