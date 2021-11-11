@@ -679,15 +679,15 @@ footer ul {
   }
 
   header {
-    margin: 10px 0;
+    margin: 10px 10%;
   }
 
   main {
-    margin: 0;
+    margin: 0 10%;
   }
 
   footer {
-    margin: 0;
+    margin: 20px 10%;
   }
 
   /* SEARCH SECTION TABLETS */
@@ -744,6 +744,7 @@ footer ul {
   #accomodation_popular_wrapper {
     display: flex;
     flex-direction: column-reverse;
+    flex-wrap: nowrap;
   }
 
   /* POPULAR SECTION TABLETS */
@@ -753,6 +754,7 @@ footer ul {
 
   /* ACCOMODATION SECTION TABLETS */
   #accomodation {
+    margin-top: 20px;
     width: 100%;
   }
 
