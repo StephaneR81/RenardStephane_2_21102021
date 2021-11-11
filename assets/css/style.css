@@ -58,8 +58,6 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
-  margin: 0 5%;
 }
 
 /*========== SEARCH SECTION DESKTOP ==========*/
@@ -243,7 +241,7 @@ form button:hover {
 
 .accomodation_card {
   width: 32%;
-  height: fit-content;
+  /* height: fit-content; */
 
   margin-top: 30px;
   padding: 10px;
@@ -279,7 +277,7 @@ form button:hover {
 .accomodation_card h3 {
   margin-top: 5px;
   margin-bottom: 0;
-
+  font-size: 15px;
   /* height: 18px; */
 }
 
@@ -679,15 +677,15 @@ footer ul {
   }
 
   header {
-    margin: 10px 10%;
+    margin: 10px 5%;
   }
 
   main {
-    margin: 0 10%;
+    margin: 0 5%;
   }
 
   footer {
-    margin: 20px 10%;
+    margin: 20px 5%;
   }
 
   /* SEARCH SECTION TABLETS */
@@ -752,6 +750,12 @@ footer ul {
     width: 100%;
   }
 
+  .popular_card img {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+
   /* ACCOMODATION SECTION TABLETS */
   #accomodation {
     margin-top: 20px;
@@ -782,13 +786,10 @@ footer ul {
   .column1,
   .column3 {
     width: 100%;
-    min-height: fit-content;
+
     height: fit-content;
-
-    border-radius: 20px;
-    margin-bottom: 15px;
-
-    box-shadow: 2px 2px 30px rgb(204, 203, 203);
+    min-height: fit-content;
+    margin-bottom: 20px;
   }
 
   .column1 .activity_card figure,
@@ -818,8 +819,6 @@ footer ul {
     width: 100%;
     height: fit-content;
     min-height: fit-content;
-
-    margin-bottom: 15px;
   }
 
   /*========== TOP CARD TABLETS ==========*/
@@ -831,7 +830,7 @@ footer ul {
     min-height: fit-content;
 
     border-radius: 20px;
-    margin: 0;
+    margin-bottom: 20px;
 
     box-shadow: 2px 2px 30px rgb(204, 203, 203);
   }
@@ -896,15 +895,11 @@ footer ul {
   body {
     color: black;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    /* max-width: 767px; */
-    margin: 10px 0;
+    margin: 0;
   }
 
   main {
-    margin-left: 0;
-    margin-right: 0;
-
-    /* width: 100%; */
+    margin: 0 3%;
   }
 
   a {
@@ -919,7 +914,6 @@ footer ul {
     width: 100%;
 
     margin: 0;
-    margin-top: 20px;
   }
 
   header a img {
@@ -960,7 +954,7 @@ footer ul {
     border-bottom: 3px solid #0065fc;
   }
 
-  /*========== SEARCH SECTION FOR MOBILES < 768px ==========*/
+  /*========== SEARCH SECTION FOR MOBILES  ==========*/
   #search {
     margin-right: 10px;
     margin-left: 10px;
@@ -977,15 +971,20 @@ footer ul {
     margin-top: 10px;
   }
 
+  form button {
+    border-radius: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
   #text_button {
     display: none;
   }
 
-  #glass_button {
+  .glass_button {
     display: block;
   }
 
-  /*========== FILTERS SECTION FOR MOBILES < 768px ==========*/
+  /*========== FILTERS SECTION FOR MOBILES ==========*/
 
   #filters {
     display: flex;
@@ -995,7 +994,13 @@ footer ul {
   }
 
   #filters ul {
+    display: flex;
+    flex-wrap: wrap;
+
     list-style-type: none;
+
+    margin-top: 0;
+
     padding-left: 0;
   }
 
@@ -1007,15 +1012,13 @@ footer ul {
     font-size: 23px;
   }
 
-  #filters ul {
-    display: flex;
-
-    flex-wrap: wrap;
-    margin-top: 0;
-  }
-
   #filters ul li {
     margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  #filters ul li a {
+    font-size: 16px;
   }
 
   #filters p {
@@ -1133,11 +1136,12 @@ footer ul {
   .popular_card figure div {
     width: 40%;
 
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .popular_card figure div img {
     width: 100%;
+    min-width: 150px;
     height: 150px;
 
     max-height: 100%;
@@ -1153,27 +1157,37 @@ footer ul {
     flex-direction: column;
     flex-wrap: nowrap;
 
+    align-content: space-between;
+
     width: 100%;
 
-    margin-left: 20px;
+    /* margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 20px; */
   }
 
   #activity h3 {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   #activity figure {
     width: 100%;
+    margin-right: 0;
   }
 
   .column1,
-  .column3 {
+  .column2,
+  .column3,
+  .column4 {
     width: 100%;
     height: initial;
-    height: 170px;
-    margin-top: 30px;
+    min-height: initial;
+  }
+
+  .column1,
+  .column2,
+  .column3 {
+    margin-bottom: 20px;
   }
 
   .column1 .activity_card,
@@ -1182,38 +1196,34 @@ footer ul {
     height: initial;
   }
 
-  .column1 .activity_card a,
-  .column3 .activity_card a {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-  }
-
   .column1 .activity_card a figure,
   .column3 .activity_card a figure {
     width: 100%;
-    height: initial;
+    margin: 0;
   }
 
   .column1 .activity_card a figure div,
   .column3 .activity_card a figure div {
     width: 100%;
-    height: 130px;
+    height: fit-content;
   }
 
   .column1 .activity_card a figure div img,
   .column3 .activity_card a figure div img {
     width: 100%;
-    height: 100%;
+    height: 150px;
+    min-height: 150px;
 
     object-fit: cover;
   }
 
   .column2,
   .column4 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
     width: 100%;
-    height: initial;
   }
 
   .column2 .activity_card_top,
@@ -1221,12 +1231,12 @@ footer ul {
   .column2 .activity_card_bottom,
   .column4 .activity_card_bottom {
     width: 100%;
-    height: initial;
-    height: 170px;
+    margin-top: 0;
+  }
 
-    margin: initial;
-
-    margin-top: 30px;
+  .column2 .activity_card_top,
+  .column4 .activity_card_top {
+    margin-bottom: 20px;
   }
 
   .column2 .activity_card_top a figure,
@@ -1234,15 +1244,7 @@ footer ul {
   .column2 .activity_card_bottom a figure,
   .column4 .activity_card_bottom a figure {
     width: 100%;
-    height: initial;
-  }
-
-  .column2 .activity_card_top a figure div,
-  .column4 .activity_card_top a figure div,
-  .column2 .activity_card_bottom a figure div,
-  .column4 .activity_card_bottom a figure div {
-    width: 100%;
-    height: 130px;
+    margin: 0;
   }
 
   .column2 .activity_card_top a figure div img,
@@ -1250,7 +1252,8 @@ footer ul {
   .column2 .activity_card_bottom a figure div img,
   .column4 .activity_card_bottom a figure div img {
     width: 100%;
-    height: 100%;
+    height: 150px;
+    min-height: 150px;
 
     object-fit: cover;
   }
