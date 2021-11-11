@@ -662,7 +662,7 @@ footer ul {
 /*==================== CSS FOR TABLET VERSIONS FROM 768px TO 1024px ====================*/
 /*=========================================================================*/
 
-/* CREATE CSS BETWEEN 768px AND 991px (TABLETTES) */
+/* CREATE CSS BETWEEN 768px AND 1024px (TABLETS) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   * {
     box-sizing: border-box;
@@ -671,11 +671,214 @@ footer ul {
   body {
     color: black;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    margin: 10px 5%;
+    margin-top: 10px;
   }
 
   a {
     text-decoration: none;
+  }
+
+  header {
+    margin: 10px 0;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  /* SEARCH SECTION TABLETS */
+  #search {
+    margin-bottom: 20px;
+  }
+
+  form input {
+    width: 220px;
+    height: 50px;
+
+    padding-left: 15px;
+
+    border: 2px solid #f2f2f2;
+  }
+
+  form button {
+    border-radius: 10px 10px 10px 10px;
+
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  #text_button {
+    display: none;
+  }
+
+  .glass_button {
+    display: block;
+  }
+
+  /* FILTERS SECTION TABLETS */
+
+  #filters h2 {
+    margin: 0;
+  }
+
+  #filters ul {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  #filters li {
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  #filters a,
+  #filters li i {
+    font-size: 16px;
+  }
+
+  /* MAIN SECTION TABLETS */
+  #accomodation_popular_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* POPULAR SECTION TABLETS */
+  #popular {
+    width: 100%;
+  }
+
+  /* ACCOMODATION SECTION TABLETS */
+  #accomodation {
+    width: 100%;
+  }
+
+  .accomodation_card {
+    width: 48%;
+  }
+
+  /* ACTIVITY SECTION */
+
+  #activity {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #activity h3 {
+    color: black;
+
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  /* ACTIVITY SECTION COLUMNS 1 AND 3 TABLETS */
+
+  .column1,
+  .column3 {
+    width: 100%;
+    min-height: fit-content;
+    height: fit-content;
+
+    border-radius: 20px;
+    margin-bottom: 15px;
+
+    box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  }
+
+  .column1 .activity_card figure,
+  .column3 .activity_card figure {
+    margin: 0;
+  }
+
+  .column1 .activity_card img,
+  .column3 .activity_card img {
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 20px 20px 0 0;
+  }
+
+  /* ACTIVITY COLUMNS 2 AND 4 TABLETS */
+
+  .column2,
+  .column4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    height: fit-content;
+    min-height: fit-content;
+
+    margin-bottom: 15px;
+  }
+
+  /*========== TOP CARD TABLETS ==========*/
+
+  .column2 .activity_card_top,
+  .column4 .activity_card_top {
+    width: 49%;
+    height: fit-content;
+    min-height: fit-content;
+
+    border-radius: 20px;
+    margin: 0;
+
+    box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  }
+
+  .column2 .activity_card_top figure,
+  .column4 .activity_card_top figure {
+    margin: 0;
+  }
+
+  .column2 .activity_card_top img,
+  .column4 .activity_card_top img {
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 20px 20px 0 0;
+  }
+
+  /*==========  BOTTOM CARD TABLETS ==========*/
+
+  .column2 .activity_card_bottom,
+  .column4 .activity_card_bottom {
+    width: 49%;
+    height: fit-content;
+    min-height: fit-content;
+
+    border-radius: 20px;
+
+    margin: 0;
+
+    box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  }
+
+  .column2 .activity_card_bottom figure,
+  .column4 .activity_card_bottom figure {
+    margin: 0;
+  }
+
+  .column2 .activity_card_bottom img,
+  .column4 .activity_card_bottom img {
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 20px 20px 0 0;
   }
 }
 
