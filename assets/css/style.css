@@ -464,8 +464,8 @@ aside ul {
 .column1,
 .column3 {
   width: 23%;
-  height: 400px;
-  min-height: 400px;
+  height: 500px;
+  min-height: 500px;
 
   border-radius: 20px;
 
@@ -488,8 +488,8 @@ aside ul {
 .column1 .activity_card img,
 .column3 .activity_card img {
   width: 100%;
-  height: 350px;
-  min-height: 350px;
+  height: 450px;
+  min-height: 450px;
 
   object-fit: cover;
 
@@ -506,8 +506,8 @@ aside ul {
   justify-content: space-between;
 
   width: 23%;
-  height: 400px;
-  min-height: 400px;
+  height: 500px;
+  min-height: 500px;
 }
 
 .column2 h3,
@@ -521,8 +521,6 @@ aside ul {
 /*========== COLUMN 2 -> TOP CARD DESKTOP ==========*/
 
 .column2 .activity_card_top {
-  height: 55%;
-
   border-radius: 20px;
 
   box-shadow: 2px 2px 30px rgb(204, 203, 203);
@@ -534,8 +532,8 @@ aside ul {
 
 .column2 .activity_card_top img {
   width: 100%;
-  height: 170px;
-  min-height: 170px;
+  height: 235px;
+  min-height: 235px;
 
   object-fit: cover;
 
@@ -559,8 +557,8 @@ aside ul {
 
 .column2 .activity_card_bottom img {
   width: 100%;
-  height: 100px;
-  min-height: 100px;
+  height: 145px;
+  min-height: 145px;
 
   object-fit: cover;
 
@@ -571,6 +569,7 @@ aside ul {
 
 .column4 .activity_card_top {
   height: 50%;
+
   height: fit-content;
 
   border-radius: 20px;
@@ -584,8 +583,8 @@ aside ul {
 
 .column4 .activity_card_top img {
   width: 100%;
-  height: 140px;
-  min-height: 140px;
+  height: 190px;
+  min-height: 190px;
 
   object-fit: cover;
 
@@ -611,8 +610,8 @@ aside ul {
 
 .column4 .activity_card_bottom img {
   width: 100%;
-  height: 140px;
-  min-height: 140px;
+  height: 190px;
+  min-height: 190px;
 
   object-fit: cover;
 
