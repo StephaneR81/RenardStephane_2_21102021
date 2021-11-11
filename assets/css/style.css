@@ -1,5 +1,5 @@
 /*=================================================================*/
-/*=================== CSS FOR DESKTOP >= 992px ====================*/
+/*=================== CSS FOR DESKTOP >= 1025px ====================*/
 /*=================================================================*/
 * {
   box-sizing: border-box;
@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
 
-  margin: 0 10px;
+  margin: 0 5%;
 }
 
 header img {
@@ -59,7 +59,7 @@ main {
   flex-direction: column;
   flex-wrap: nowrap;
 
-  margin: 0 10px;
+  margin: 0 5%;
 }
 
 /*========== SEARCH SECTION DESKTOP ==========*/
@@ -267,9 +267,9 @@ form button:hover {
 
 .accomodation_card img {
   width: 100%;
-  height: 90px;
+  height: 120px;
 
-  min-height: 90px;
+  min-height: 120px;
 
   object-fit: cover;
 
@@ -412,7 +412,7 @@ aside ul {
 
 .popular_card img {
   width: 100px;
-  height: 110px;
+  height: 132px;
 
   object-fit: cover;
 
@@ -478,7 +478,7 @@ aside ul {
 .column3 h3 {
   color: black;
 
-  padding-left: 20px;
+  padding-left: 13px;
   font-size: 13px;
 }
 
@@ -516,7 +516,7 @@ aside ul {
 .column4 h3 {
   color: black;
 
-  padding-left: 20px;
+  padding-left: 13px;
   font-size: 13px;
 }
 
@@ -664,6 +664,19 @@ footer ul {
 
 /* CREATE CSS BETWEEN 768px AND 991px (TABLETTES) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    color: black;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin: 10px 5%;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 /*=========================================================================*/
@@ -678,8 +691,8 @@ footer ul {
   body {
     color: black;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    max-width: 767px;
-    margin: 0;
+    /* max-width: 767px; */
+    margin: 10px 0;
   }
 
   main {
