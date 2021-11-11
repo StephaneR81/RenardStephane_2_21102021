@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
 
-  margin: 0 5%;
+  margin: 0 1%;
 }
 
 header img {
@@ -58,6 +58,8 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+
+  margin: 0 1%;
 }
 
 /*========== SEARCH SECTION DESKTOP ==========*/
@@ -241,7 +243,6 @@ form button:hover {
 
 .accomodation_card {
   width: 32%;
-  /* height: fit-content; */
 
   margin-top: 30px;
   padding: 10px;
@@ -278,7 +279,6 @@ form button:hover {
   margin-top: 5px;
   margin-bottom: 0;
   font-size: 15px;
-  /* height: 18px; */
 }
 
 .accomodation_card h3,
@@ -1160,10 +1160,6 @@ footer ul {
     align-content: space-between;
 
     width: 100%;
-
-    /* margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px; */
   }
 
   #activity h3 {
