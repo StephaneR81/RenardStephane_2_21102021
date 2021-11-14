@@ -267,14 +267,15 @@ form button:hover {
   border-radius: 20px;
   background-color: white;
 
-  transition: box-shadow 0.5s;
+  box-shadow: 2px 2px 10px rgb(153, 153, 153);
+  transition: box-shadow 0.3s;
 
   font-size: 13px;
 }
 
 .accomodation_card:hover {
-  box-shadow: 2px 2px 10px rgb(22, 22, 22);
-  transition: box-shadow 0.2s;
+  box-shadow: 2px 2px 15px rgb(22, 22, 22);
+  transition: box-shadow 0.3s;
 }
 
 .accomodation_card figure {
@@ -402,12 +403,13 @@ aside ul {
 
   background-color: white;
 
-  transition: box-shadow 0.5s;
+  box-shadow: 2px 2px 10px rgb(153, 153, 153);
+  transition: box-shadow 0.3s;
 }
 
 .popular_card:hover {
-  box-shadow: 2px 2px 10px rgb(22, 22, 22);
-  transition: box-shadow 0.2s;
+  box-shadow: 2px 2px 15px rgb(22, 22, 22);
+  transition: box-shadow 0.3s;
 }
 
 .popular_card figure {
@@ -487,7 +489,7 @@ aside ul {
 
   border-radius: 20px;
 
-  box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  box-shadow: 2px 2px 30px rgb(122, 122, 122);
 }
 
 .column1 h3,
@@ -541,7 +543,7 @@ aside ul {
 .column2 .activity_card_top {
   border-radius: 20px;
 
-  box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  box-shadow: 2px 2px 30px rgb(122, 122, 122);
 }
 
 .column2 .activity_card_top figure {
@@ -592,7 +594,7 @@ aside ul {
 
   border-radius: 20px;
 
-  box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  box-shadow: 2px 2px 30px rgb(122, 122, 122);
 }
 
 .column4 .activity_card_top figure {
