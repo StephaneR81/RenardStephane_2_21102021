@@ -446,7 +446,7 @@ aside ul {
 }
 
 .popular_card h3 {
-  height: 54px;
+  height: 36px;
 
   font-size: 14px;
 }
@@ -464,8 +464,12 @@ aside ul {
   list-style-type: none;
 
   padding: 0; /* ALIGN RATING STARS ON THE LEFT */
-  margin-top: 15px;
+  margin-top: 40px;
   margin-bottom: 0;
+}
+
+.popular_card li i {
+  font-size: 13px;
 }
 
 /*========== ACTIVITY SECTION DESKTOP ==========*/
