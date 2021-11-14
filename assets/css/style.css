@@ -94,7 +94,7 @@ form input {
 }
 
 form input::placeholder {
-  opacity: 1; /*Firefox*/
+  opacity: 1; /* Firefox */
   color: black;
   font-size: 15px;
   font-weight: bold;
@@ -699,13 +699,14 @@ footer ul {
     padding-left: 15px;
 
     border: 2px solid #f2f2f2;
+    border-right: none;
+    margin-right: -5px;
   }
 
   form button {
     border-radius: 10px 10px 10px 10px;
-
-    margin-left: -5px;
-    margin-right: -5px;
+    width: 50px;
+    height: 50px;
   }
 
   #text_button {
@@ -713,7 +714,9 @@ footer ul {
   }
 
   .glass_button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* FILTERS SECTION TABLETS */
@@ -970,17 +973,25 @@ footer ul {
     margin-top: 10px;
   }
 
-  form button {
-    border-radius: 10px;
-    margin-left: -5px;
+  form input {
+    border-right: none;
     margin-right: -5px;
   }
+
+  form button {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
   #text_button {
     display: none;
   }
 
   .glass_button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /*========== FILTERS SECTION FOR MOBILES ==========*/
