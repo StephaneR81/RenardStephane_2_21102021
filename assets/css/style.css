@@ -324,6 +324,10 @@ form button:hover {
   padding: 0px; /* ALIGN RATING STARS ON THE LEFT */
 }
 
+.accomodation_card figcaption li i {
+  font-size: 13px;
+}
+
 /* Select all elements exepted first X */
 .three_stars ul li:nth-child(n + 4),
 .four_stars ul li:nth-child(n + 5),
@@ -1173,6 +1177,10 @@ footer ul {
 
   .popular_card figure figcaption p {
     margin: 0;
+  }
+
+  .popular_card figcaption li {
+    font-size: 15px;
   }
 
   .popular_card figure div {
