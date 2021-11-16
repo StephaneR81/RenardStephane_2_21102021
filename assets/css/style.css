@@ -1104,13 +1104,6 @@ footer ul {
     box-shadow: 2px 2px 30px rgb(204, 203, 203);
   }
 
-  .accomodation_card figure div {
-    width: 100%;
-    height: 150px;
-
-    max-height: 150px;
-  }
-
   .accomodation_card figure figcaption h3 {
     margin-top: 10px;
     margin-bottom: 0;
@@ -1126,7 +1119,7 @@ footer ul {
     margin-top: 10px;
   }
 
-  .accomodation_card figure div img {
+  .accomodation_card figure img {
     width: 100%;
     height: 120px;
 
@@ -1167,11 +1160,11 @@ footer ul {
     font-size: 15px;
   }
 
-  .popular_card figure div {
+  .popular_card figure {
     margin-right: 15px;
   }
 
-  .popular_card figure div img {
+  .popular_card figure img {
     width: 130px;
     min-width: 130px;
 
