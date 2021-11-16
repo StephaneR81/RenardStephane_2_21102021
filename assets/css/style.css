@@ -427,8 +427,8 @@ aside ul {
   border-radius: 20px 0 0 20px;
 }
 
-.popular_card div {
-  margin-right: 15px;
+.popular_card figcaption {
+  margin-left: 15px;
 }
 
 .popular_card img {
@@ -1232,14 +1232,8 @@ footer ul {
     margin: 0;
   }
 
-  .column1 .activity_card a figure div,
-  .column3 .activity_card a figure div {
-    width: 100%;
-    height: fit-content;
-  }
-
-  .column1 .activity_card a figure div img,
-  .column3 .activity_card a figure div img {
+  .column1 .activity_card a figure img,
+  .column3 .activity_card a figure img {
     width: 100%;
     height: 150px;
     min-height: 150px;
@@ -1277,10 +1271,10 @@ footer ul {
     margin: 0;
   }
 
-  .column2 .activity_card_top a figure div img,
-  .column4 .activity_card_top a figure div img,
-  .column2 .activity_card_bottom a figure div img,
-  .column4 .activity_card_bottom a figure div img {
+  .column2 .activity_card_top a figure img,
+  .column4 .activity_card_top a figure img,
+  .column2 .activity_card_bottom a figure img,
+  .column4 .activity_card_bottom a figure img {
     width: 100%;
     height: 150px;
     min-height: 150px;
