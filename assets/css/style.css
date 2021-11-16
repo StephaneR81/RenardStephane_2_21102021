@@ -433,8 +433,9 @@ aside ul {
 
 .popular_card img {
   width: 110px;
-  height: 140px;
+  min-width: 110px;
 
+  height: 140px;
   min-height: 140px;
 
   object-fit: cover;
