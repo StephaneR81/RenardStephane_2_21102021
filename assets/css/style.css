@@ -179,6 +179,10 @@ form button:hover {
   font-size: 18px;
 }
 
+#filters p {
+  width: 100%;
+}
+
 #filters a {
   display: inline-flex;
   align-items: center;
