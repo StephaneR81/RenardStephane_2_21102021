@@ -201,11 +201,6 @@ form button:hover {
   box-shadow: 2px 2px 5px black;
 }
 
-#filters p {
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 #filters p i {
   display: inline-flex;
   justify-content: center;
@@ -348,14 +343,6 @@ form button:hover {
 }
 
 /*========== POPULAR SECTION DESKTOP ==========*/
-
-aside ul {
-  display: flex;
-
-  padding-left: 0;
-
-  list-style-type: none;
-}
 
 #popular {
   display: flex;
@@ -530,7 +517,6 @@ aside ul {
 .column4 {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: space-between;
 
   width: 23%;
@@ -550,7 +536,7 @@ aside ul {
 
 .column2 .activity_card_top {
   border-radius: 20px;
-
+  margin-bottom: 25px;
   box-shadow: 2px 2px 30px rgb(122, 122, 122);
 }
 
@@ -575,7 +561,7 @@ aside ul {
 
   border-radius: 20px;
 
-  box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  box-shadow: 2px 2px 30px rgb(122, 122, 122);
 }
 
 .column2 .activity_card_bottom figure {
@@ -595,10 +581,6 @@ aside ul {
 /*========== COLUMN 4 -> TOP CARD DESKTOP ==========*/
 
 .column4 .activity_card_top {
-  height: 50%;
-
-  height: fit-content;
-
   border-radius: 20px;
 
   box-shadow: 2px 2px 30px rgb(122, 122, 122);
@@ -622,13 +604,11 @@ aside ul {
 
 .column4 .activity_card_bottom {
   height: 50%;
-  height: fit-content;
-
   border-radius: 20px;
 
   margin-top: 25px;
 
-  box-shadow: 2px 2px 30px rgb(204, 203, 203);
+  box-shadow: 2px 2px 30px rgb(122, 122, 122);
 }
 
 .column4 .activity_card_bottom figure {
@@ -912,7 +892,6 @@ footer ul {
   }
 
   #search h1 {
-
     margin: 0;
     font-size: 25px;
   }
@@ -939,16 +918,11 @@ footer ul {
   /*========== FILTERS SECTION FOR MOBILES ==========*/
 
   #filters {
-    display: flex;
-
     margin: 0 20px;
   }
 
   #filters ul {
-    display: flex;
     flex-wrap: wrap;
-
-    list-style-type: none;
 
     margin-top: 0;
 
@@ -956,7 +930,6 @@ footer ul {
   }
 
   #filters h2 {
-    width: 100%;
     margin-top: 30px;
     margin-bottom: 10px;
 
@@ -978,13 +951,11 @@ footer ul {
 
   #filters p i {
     float: left;
-    clear: both;
   }
 
   /*========== (ACCOMODATION + POPULAR) WRAPPER FOR MOBILES < 768px ==========*/
 
   #accomodation_popular_wrapper {
-    display: flex;
     flex-direction: column-reverse;
   }
 
@@ -1001,7 +972,6 @@ footer ul {
 
   /*========== ACCOMODATION SECTION FOR MOBILES < 768px ==========*/
   #accomodation {
-    display: flex;
     flex-direction: column;
 
     width: 100%;
@@ -1021,7 +991,7 @@ footer ul {
 
   .accomodation_card figure figcaption h3 {
     margin-top: 10px;
-    margin-bottom: 0;
+
     font-size: 17px;
   }
 
@@ -1035,7 +1005,6 @@ footer ul {
   }
 
   .accomodation_card figure img {
-    width: 100%;
     height: 120px;
 
     max-height: 100%;
@@ -1043,17 +1012,12 @@ footer ul {
 
   /*========== POPULAR SECTION FOR MOBILES < 768px ==========*/
   .popular_card {
-    width: 100%;
     height: 100%;
 
     padding: 5px;
 
     margin-bottom: 15px;
 
-    box-shadow: 2px 2px 30px rgb(204, 203, 203);
-  }
-
-  .popular_card:hover {
     box-shadow: 2px 2px 30px rgb(204, 203, 203);
   }
 
@@ -1086,14 +1050,11 @@ footer ul {
     height: 150px;
     max-height: 100%;
 
-    object-fit: cover;
-
     border-radius: 15px 0 0 15px;
   }
 
   /*========== ACTIVITY SECTION FOR MOBILES < 768px ==========*/
   #activity {
-    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 
@@ -1108,18 +1069,13 @@ footer ul {
     font-size: 16px;
   }
 
-  #activity figure {
-    width: 100%;
-    margin-right: 0;
-  }
-
   .column1,
   .column2,
   .column3,
   .column4 {
     width: 100%;
-    height: initial;
-    min-height: initial;
+    height: fit-content;
+    min-height: fit-content;
   }
 
   .column1,
@@ -1128,41 +1084,21 @@ footer ul {
     margin-bottom: 20px;
   }
 
-  .column1 .activity_card,
-  .column3 .activity_card {
-    width: 100%;
-    height: initial;
-  }
-
-  .column1 .activity_card a figure,
-  .column3 .activity_card a figure {
-    width: 100%;
-    margin: 0;
-  }
-
   .column1 .activity_card a figure img,
   .column3 .activity_card a figure img {
-    width: 100%;
     height: 150px;
     min-height: 150px;
-
-    object-fit: cover;
   }
 
   .column2,
   .column4 {
-    display: flex;
-    flex-direction: column;
     align-content: center;
-
-    width: 100%;
   }
 
   .column2 .activity_card_top,
   .column4 .activity_card_top,
   .column2 .activity_card_bottom,
   .column4 .activity_card_bottom {
-    width: 100%;
     margin-top: 0;
   }
 
@@ -1171,23 +1107,12 @@ footer ul {
     margin-bottom: 20px;
   }
 
-  .column2 .activity_card_top a figure,
-  .column4 .activity_card_top a figure,
-  .column2 .activity_card_bottom a figure,
-  .column4 .activity_card_bottom a figure {
-    width: 100%;
-    margin: 0;
-  }
-
   .column2 .activity_card_top a figure img,
   .column4 .activity_card_top a figure img,
   .column2 .activity_card_bottom a figure img,
   .column4 .activity_card_bottom a figure img {
-    width: 100%;
     height: 150px;
     min-height: 150px;
-
-    object-fit: cover;
   }
 
   /*========== FOOTER SECTION FOR MOBILES < 768px ==========*/
@@ -1197,7 +1122,6 @@ footer ul {
   }
 
   .footer_container {
-    display: flex;
     flex-direction: column;
 
     width: 100%;
