@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Booki</title>
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header>
         <a href="#">
-            <img src="./assets/img/logo/Booki.png" alt="Logo bleu de Booki" title="Retour vers l'accueil" />
+            <img src="./assets/img/logo/booki_logo_small.png"
+                srcset="./assets/img/logo/booki_logo_small.png 191w,./assets/img/logo/booki_logo_medium.png 285w"
+                sizes="100vw" alt="Logo bleu de Booki" title="Retour vers l'accueil" />
         </a>
         <nav>
             <ul>
@@ -26,386 +31,401 @@
         </nav>
     </header>
 
-    <!-- SECTION MAIN (ASIDE + HEBERGEMENTS) -->
+    <!-- SECTION MAIN (SEARCH + FILTERS + WRAPPER + ACTIVITY) -->
     <main>
-        <!-- SECTION SEARCH -->
+        <!-- SEARCH SECTION -->
         <section id="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <form action="#" method="post">
-
-                <label for="search_field"><i class="fas fa-map-marker-alt "></i></label>
+                <label for="search_field"><i class="fas fa-map-marker-alt"></i></label>
                 <input type="search" name="search_field" id="search_field" placeholder="Marseille, France" />
-                <button type="submit">Rechercher</button>
+                <button type="submit" id="text_button">Rechercher</button>
+                <button type="submit" class="glass_button"><i class="fas fa-search"></i></button>
 
             </form>
         </section>
 
-        <!-- SECTION FILTRES -->
+        <!-- FILTERS SECTION -->
         <section id="filters">
             <h2>Filtres</h2>
             <ul>
                 <li>
-                    <a href="#"><i class="fas fa-money-bill-wave"></i> Economique</a></li>
+                    <a href="#"><i class="fas fa-money-bill-wave"></i> &Eacute;conomique</a>
+                </li>
                 <li>
-                    <a href="#"><i class="fas fa-child"></i> Familial</a></li>
+                    <a href="#"><i class="fas fa-child"></i> Familial</a>
+                </li>
                 <li>
-                    <a href="#"><i class="fas fa-heart"></i> Romantique</a></li>
+                    <a href="#"><i class="fas fa-heart"></i> Romantique</a>
+                </li>
                 <li>
-                    <a href="#"><i class="fas fa-dog"></i> Animaux autorisés</a></li>
+                    <a href="#"><i class="fas fa-dog"></i> Animaux autorisés</a>
+                </li>
             </ul>
             <p>
-                <i class="fas fa-info-circle "></i> Plus de 500 logements sont disponibles dans cette ville
+                <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
             </p>
         </section>
 
-        <!-- SECTION HEBERGEMENTS (CONTAINER)  -->
-        <section id="accomodation">
-            <h2>Hébergements à Marseille</h2>
-            <!-- WHOLE CARD AUBERGE CANNEBIERE -->
-            <article>
-                <!-- WHOLE CARD CLICKABLE LINK -->
-                <a href="#">
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/auberge_cannebiere_mini.jpg " alt="Photo d'une chambre avec lit superposé, mirroir, rideau vert et ventilateur" />
-                        </div>
-                        <figcaption>
-                            <h3>Auberge La Cannebière</h3>
-                            <p>Nuit à partir de <em>25€</em></p>
-                            <!-- 4/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="far fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </article>
 
-            <!-- WHOLE CARD HOTEL DU PORT -->
-            <article>
-                <!-- WHOLE CARD CLICKABLE LINK -->
-                <a href="#">
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/hotel_port_mini.jpg " alt="Photo d'une chambre avec deux lits et oreiller gauche Buenos Aires" />
-                        </div>
-                        <figcaption>
-                            <h3>Hôtel du port</h3>
-                            <p>Nuit à partir de <em>52€</em></p>
-                            <!-- 5/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </article>
+        <div id="accomodation_popular_wrapper">
+            <!-- ACCOMODATION SECTION  -->
+            <section id="accomodation">
+                <h2>Hébergements à Marseille</h2>
 
-            <!-- WHOLE CARD HOTEL LES MOUETTES -->
-            <article>
-                <!-- WHOLE CARD CLICKABLE LINK -->
-                <a href="#">
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/hotel_mouettes_mini.jpg " alt="Photo d'une chambre avec un lit, un oreiller ocre et des mirroirs circulaires" />
-                        </div>
-                        <figcaption>
-                            <h3>Hôtel Les mouettes</h3>
-                            <p>Nuit à partir de <em>76€</em></p>
-                            <!-- 4/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="far fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </article>
+                <!-- "HOTEL CANNEBIERE" CARD -->
+                <article class="accomodation_card four_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/auberge_cannebiere_small.jpg"
+                                srcset="./assets/img/hebergements/auberge_cannebiere_small.jpg 750w,./assets/img/hebergements/auberge_cannebiere_medium.jpg 1499w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre avec lit superposé, mirroir, rideau vert et ventilateur" />
+                            <figcaption>
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <em>25€</em></p>
+                                <!-- 4/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
 
-            <!-- WHOLE CARD HOTEL DE LA MER -->
-            <article>
-                <!-- WHOLE CARD CLICKABLE LINK -->
-                <a href="#">
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/hotel_mer_mini.jpg " alt="Photo d'une chambre avec un lit double, surmonté d'un grand cadre représentant la mer" />
-                        </div>
-                        <figcaption>
-                            <h3>Hôtel de la mer</h3>
-                            <p>Nuit à partir de <em>46€</em></p>
-                            <!-- 3/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="far fa-star "></i></li>
-                                <li><i class="far fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </article>
 
-            <!-- WHOLE CARD AUBERGE LE PANIER -->
-            <article>
-                <!-- WHOLE CARD CLICKABLE LINK -->
-                <a href="#">
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/auberge_panier_mini.jpg " alt="Photo d'une chambre avec deux lits superposés dont la structure est en bois" />
-                        </div>
-                        <figcaption>
-                            <h3>Auberge Le Panier</h3>
-                            <p>Nuit à partir de <em>23€</em></p>
-                            <!-- 4/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="far fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </article>
+                <!-- "HOTEL DU PORT" CARD -->
+                <article class="accomodation_card five_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/hotel_port_small.jpg"
+                                srcset="./assets/img/hebergements/hotel_port_small.jpg 684w,./assets/img/hebergements/hotel_port_medium.jpg 1368w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre avec deux lits et oreiller gauche Buenos Aires" />
+                            <figcaption>
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de <em>52€</em></p>
+                                <!-- 5/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
 
-            <!-- WHOLE CARD HOTEL CHEZ AMINA -->
-            <article>
-                <!-- WHOLE CARD CLICKABLE LINK -->
-                <a href="#">
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/hotel_amina.jpg " alt="Photo d'une chambre avec deux lits, un bureau et une chaise, et un téléviseur sur le mur" />
-                        </div>
-                        <figcaption>
-                            <h3>Hôtel chez Amina</h3>
-                            <p>Nuit à partir de <em>96€</em></p>
-                            <!-- 5/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </article>
+                <!-- "HOTEL LES MOUETTES" CARD -->
+                <article class="accomodation_card four_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/hotel_mouettes_small.jpg"
+                                srcset="./assets/img/hebergements/hotel_mouettes_small.jpg 750w,./assets/img/hebergements/hotel_mouettes_medium.jpg 1500w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre avec un lit, un oreiller ocre et des mirroirs circulaires" />
+                            <figcaption>
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de <em>76€</em></p>
+                                <!-- 4/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
 
-            <!-- LIEN "AFFICHER PLUS " -->
-            <a href="#">Afficher plus</a>
+                <!-- "HOTEL DE LA MER" CARD -->
+                <article class="accomodation_card three_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/hotel_mer_small.jpg"
+                                srcset="./assets/img/hebergements/hotel_mer_small.jpg 500w,./assets/img/hebergements/hotel_mer_medium.jpg 1000w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre avec un lit double, surmonté d'un grand cadre représentant la mer" />
+                            <figcaption>
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de <em>46€</em></p>
+                                <!-- 3/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
 
+                <!-- "AUBERGE LE PANIER" CARD -->
+                <article class="accomodation_card four_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/auberge_panier_small.jpg"
+                                srcset="./assets/img/hebergements/auberge_panier_small.jpg 652w,./assets/img/hebergements/auberge_panier_medium.jpg 1303w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre avec deux lits superposés dont la structure est en bois" />
+                            <figcaption>
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de <em>23€</em></p>
+                                <!-- 4/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <!-- "HOTEL CHEZ AMINA" CARD -->
+                <article class="accomodation_card five_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/hotel_amina_small.jpg"
+                                srcset="./assets/img/hebergements/hotel_amina_small.jpg 486w,./assets/img/hebergements/hotel_amina_medium.jpg 972w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre avec deux lits, un bureau et une chaise, et un téléviseur sur le mur" />
+                            <figcaption>
+                                <h3>Hôtel chez Amina</h3>
+                                <p>Nuit à partir de <em>96€</em></p>
+                                <!-- 5/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <!-- "AFFICHER PLUS" LINK -->
+                <a href="#" class="show_more">Afficher plus</a>
+            </section>
+
+            <!-- "LES PLUS POPULAIRES" ASIDE SECTION -->
+            <aside id="popular">
+                <!-- TITLE WRAPPER -->
+                <div id="title_wrapper">
+                    <h2>Les plus populaires</h2>
+                    <div id="popular_icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+                <!-- "HOTEL LE SOLEIL DU MATIN" CARD -->
+                <article class="popular_card five_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/hotel_soleil_small.jpg"
+                                srcset="./assets/img/hebergements/hotel_soleil_small.jpg 532w,./assets/img/hebergements/hotel_soleil_medium.jpg 1063w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre aux murs verts, avec un lit double surmonté d'un mirroir rectangulaire" />
+                            <figcaption>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de <em>128€</em></p>
+                                <!-- 5/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <!-- "CHAMBRES D'HÔTES AU COEUR DE L'EAU" CARD -->
+                <article class="popular_card four_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/coeur_eau_small.jpg"
+                                srcset="./assets/img/hebergements/coeur_eau_small.jpg 504w,./assets/img/hebergements/coeur_eau_medium.jpg 1008w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre avec un lit double, des barrières et une échelle noires sur la gauche" />
+                            <figcaption>
+                                <h3>Au cœur de l'eau Chambres d'hôtes</h3>
+                                <p>Nuit à partir de <em>71€</em></p>
+                                <!-- 4/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <!-- "HOTEL TOUT BLEU ET BLANC" CARD -->
+                <article class="popular_card four_stars">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/hebergements/hotel_tout_bleu_small.jpg"
+                                srcset="./assets/img/hebergements/hotel_tout_bleu_small.jpg 500w,./assets/img/hebergements/hotel_tout_bleu_medium.jpg 1000w"
+                                sizes="100vw"
+                                alt="Photo d'une chambre avec un lit double, couverture et oreillers blancs, tête de lit en bois avec lampes" />
+                            <figcaption>
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de <em>68€</em></p>
+                                <!-- 4/5 BLUE STARS RATING-->
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </aside>
+        </div>
+
+        <!-- "ACTIVITES A MARSEILLE" SECTION -->
+        <section id="activity">
+            <h2>Activités à Marseille</h2>
+
+            <!-- COLUMN 1 DIV -->
+            <div class="column1">
+                <article class="activity_card">
+                    <!-- COLUMN 1 CARD LINK -->
+                    <a href="">
+                        <figure>
+                            <img src="./assets/img/activites/vieux_port_small.jpg"
+                                srcset="./assets/img/activites/vieux_port_small.jpg 702w,./assets/img/activites/vieux_port_medium.jpg 1404w"
+                                sizes="100vw" alt="Photo de bateaux dans un port" />
+                            <figcaption>
+                                <h3>Vieux Port</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </div>
+
+            <!-- COLUMN 2 DIV -->
+            <div class="column2">
+                <!-- TOP CARD -->
+                <article class="activity_card_top">
+                    <!-- TOP CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/activites/pomegues_small.jpg"
+                                srcset="./assets/img/activites/pomegues_small.jpg 356w,./assets/img/activites/pomegues_medium.jpg 711w"
+                                sizes="100vw" alt="Photo d'un fort au sommet d'un rocher" />
+                            <figcaption>
+                                <h3>Fort de Pomègues</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <!-- BOTTOM CARD -->
+                <article class="activity_card_bottom">
+                    <!-- BOTTOM CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/activites/frioul_small.jpg"
+                                srcset="./assets/img/activites/frioul_small.jpg 648w,./assets/img/activites/frioul_medium.jpg 1296w"
+                                sizes="100vw" alt="Photo d'îles avec une longue-vue" />
+                            <figcaption>
+                                <h3>Îles du Frioul</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </div>
+
+            <!-- COLUMN 3 -->
+            <div class="column3">
+                <article class="activity_card">
+                    <!-- CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/activites/calanques_small.jpg"
+                                srcset="./assets/img/activites/calanques_small.jpg 606w,./assets/img/activites/calanques_medium.jpg 1212w"
+                                sizes="100vw" alt="Photo d'une calanque entourée de massifs rocheux" />
+                            <figcaption>
+                                <h3>Parc National des Calanques</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </div>
+
+            <!-- DIV COLUMN 4 -->
+            <div class="column4">
+                <!-- TOP CARD -->
+                <article class="activity_card_top">
+                    <!-- TOP CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/activites/notre_dame_garde_small.jpg"
+                                srcset="./assets/img/activites/notre_dame_garde_small.jpg 589w,./assets/img/activites/notre_dame_garde_medium.jpg 1178w"
+                                sizes="100vw" alt="Photo d'une basilique au sommet d'une colline" />
+                            <figcaption>
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <!-- BOTTOM CARD -->
+                <article class="activity_card_bottom">
+                    <!-- BOTTOM CARD LINK -->
+                    <a href="#">
+                        <figure>
+                            <img src="./assets/img/activites/longchamp_small.jpg"
+                                srcset="./assets/img/activites/longchamp_small.jpg 504w,./assets/img/activites/longchamp_medium.jpg 1008w"
+                                sizes="100vw" alt="Photo du Palais Longchamp avec une fontaine" />
+                            <figcaption>
+                                <h3>Parc Longchamp</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </div>
         </section>
-
-        <!-- ASIDE (LES PLUS POPULAIRES) -->
-        <aside id="popular">
-            <!-- TITLE AND TOP POPULAR ICON -->
-            <h2>Les plus populaires <i class="fas fa-chart-line "></i></h2>
-
-            <!-- WHOLE CARD CLICKABLE LINK -->
-            <a href="#">
-                <!-- WHOLE CARD HOTEL LE SOLEIL DU MATIN -->
-                <article>
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/hotel_soleil_mini.jpg " alt="Photo d'une chambre aux murs verts, avec un lit double surmonté d'un mirroir rectangulaire" />
-                        </div>
-                        <figcaption>
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de <em>128€</em></p>
-                            <!-- 5/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </article>
-            </a>
-
-            <!-- WHOLE CARD CLICKABLE LINK -->
-            <a href="#">
-                <!-- WHOLE CARD CHAMBRES D'HÔTES AU COEUR DE L'EAU -->
-                <article>
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/coeur_eau_mini.jpg " alt="Photo d'une chambre avec un lit double, des barrières et une échelle noires sur la gauche" />
-                        </div>
-                        <figcaption>
-                            <h3>Chambres d'hôtes Au cœur de l'eau</h3>
-                            <p>Nuit à partir de <em>71€</em></p>
-                            <!-- 4/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="far fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </article>
-            </a>
-
-            <!-- WHOLE CARD CLICKABLE LINK -->
-            <a href="#">
-                <!-- WHOLE CARD HOTEL TOUT BLEU ET BLANC -->
-                <article>
-                    <figure>
-                        <!-- DIV PICTURE -->
-                        <div>
-                            <img src="./assets/img/hebergements/hotel_tout_bleu_mini.jpg " alt="Photo d'une chambre avec un lit double, couverture et oreillers blancs, tête de lit en bois avec lampes" />
-                        </div>
-                        <figcaption>
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>Nuit à partir de <em>68€</em></p>
-                            <!-- 4/5 BLUE STARS RATING-->
-                            <ul>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="far fa-star "></i></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </article>
-            </a>
-        </aside>
     </main>
-
-    <!-- SECTION ACTIVITES A MARSEILLE (FLEX CONTAINER)-->
-    <section id="activity">
-        <h2>Activités à Marseille</h2>
-
-        <!-- DIV COLUMN 1 -->
-        <div>
-            <article>
-                <figure>
-                    <!-- DIV PICTURE -->
-                    <div>
-                        <img src="./assets/img/activites/vieux_port_mini.jpg " alt="Photo de bateaux dans un port">
-                    </div>
-                    <figcaption>
-                        <h3>Vieux Port</h3>
-                    </figcaption>
-                </figure>
-            </article>
-        </div>
-
-        <!-- DIV COLUMN 2 -->
-        <div>
-            <!-- CARD UP -->
-            <article>
-                <figure>
-                    <!-- DIV PICTURE -->
-                    <div>
-                        <img src="./assets/img/activites/pomegues_mini.jpg " alt="Photo d'un fort au sommet d'un rocher">
-                    </div>
-                    <figcaption>
-                        <h3>
-                            Fort de Pomègues
-                        </h3>
-                    </figcaption>
-                </figure>
-            </article>
-            <!-- CARD DOWN -->
-            <article>
-                <figure>
-                    <!-- DIV PICTURE -->
-                    <div>
-                        <img src="./assets/img/activites/frioul_mini.jpg " alt="Photo d'îles avec une longue-vue">
-                    </div>
-                    <figcaption>
-                        <h3>
-                            Îles du Frioul
-                        </h3>
-                    </figcaption>
-                </figure>
-            </article>
-        </div>
-
-        <!-- COLUMN 3 -->
-        <div>
-            <article>
-                <figure>
-                    <!-- DIV PICTURE -->
-                    <div>
-                        <img src="./assets/img/activites/calanques_mini.jpg " alt="Photo d'une calanque entourée de massifs rocheux">
-                    </div>
-                    <figcaption>
-                        <h3>
-                            Parc National des Calanques
-                        </h3>
-                    </figcaption>
-                </figure>
-            </article>
-        </div>
-
-        <!-- DIV COLUMN 4 -->
-        <div>
-            <!-- CARD UP -->
-            <article>
-                <figure>
-                    <!-- DIV PICTURE -->
-                    <div>
-                        <img src="./assets/img/activites/notre_dame_garde_mini.jpg " alt="Photo d'une basilique au sommet d'une colline">
-                    </div>
-                    <figcaption>
-                        <h3>
-                            Notre-Dame-de-la-Garde
-                        </h3>
-                    </figcaption>
-                </figure>
-            </article>
-            <!-- CARD DOWN -->
-            <article>
-                <figure>
-                    <!-- DIV PICTURE -->
-                    <div>
-                        <img src="./assets/img/activites/longchamp_mini.jpg " alt="Photo du Palais Longchamp avec une fontaine">
-                    </div>
-                    <figcaption>
-                        <h3>
-                            Parc Longchamp
-                        </h3>
-                    </figcaption>
-                </figure>
-            </article>
-        </div>
-    </section>
 
     <!-- FOOTER -->
     <footer>
-
-        <!-- GLOBAL DIV SECTION A PROPOS -->
-        <div>
-            <!-- DIV A PROPOS -->
+        <!-- WRAPPER -->
+        <div class="footer_container">
+            <!-- "A PROPOS" DIV -->
             <div>
                 <h2>A propos</h2>
                 <ul>
@@ -415,7 +435,7 @@
                 </ul>
             </div>
 
-            <!-- DIV NOS HEBERGEMENTS -->
+            <!-- "NOS HEBERGEMENTS" DIV -->
             <div>
                 <h2>Nos hébergements</h2>
                 <ul>
@@ -424,7 +444,7 @@
                 </ul>
             </div>
 
-            <!-- DIV ASSISTANCE -->
+            <!-- "ASSISTANCE" DIV -->
             <div>
                 <h2>Assistance</h2>
                 <ul>
